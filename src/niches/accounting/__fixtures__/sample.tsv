@@ -1,0 +1,9 @@
+Agency Name	License Type	Speciality Code	License Number	Indiv/Org	Org/Last Name	First Name	Middle Name	Suffix	Address Line 1	Address Line 2	City	County	State	Zip	Country	Original Issue Date	Expiration Date	School	Year Graduated	Degree	License Status
+Board Of Accountancy	Cpa - Corporation		900001	O	Fakename & Testwell Cpas Inc				100 Example Ave Ste 200		Irvine	Orange	CA	926121234		03-15-1988	07-31-2027				Active
+Board Of Accountancy	Certified Public Accountant		800001	I	Fakename	Alice			100 Example Avenue	Suite 200	Irvine	Orange	CA	92612		06-01-1984	05-31-2027				Active
+Board Of Accountancy	Certified Public Accountant		800002	I	Testwell	Bob			100 Example Ave		Irvine	Orange	CA	92612		09-01-2002	05-31-2027				Active
+Board Of Accountancy	Certified Public Accountant		800003	I	Unrelated	Carol			100 Example Ave Ste 200		Irvine	Orange	CA	92612		01-01-2019	05-31-2027				Active
+Board Of Accountancy	Certified Public Accountant		800004	I	Fakename	Dan			100 Example Ave Ste 450		Irvine	Orange	CA	92612		01-01-1990	05-31-2027				Active
+Board Of Accountancy	Cpa - Partnership		900002	O	Sampleton Partners Llp				7 Tower Plz Ste 1500		Anaheim	Orange	CA	92805		11-20-2012	07-31-2027				Active
+Board Of Accountancy	Fictitious Name Registration		900003	O	Placeholder Tax Services				55 Nowhere Rd		Pasadena	Los Angeles	CA	91101		02-02-1995	07-31-2027				Active
+Board Of Accountancy	Cpa - Corporation		900004	O	Lapsed Demo Cpas Inc				9 Gone St		Irvine	Orange	CA	92612		01-01-1979	07-31-2025				Delinquent

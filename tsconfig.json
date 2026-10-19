@@ -19,6 +19,10 @@
       }
     ],
     "paths": {
+      "@/core": ["./src/core"],
+      "@/core/*": ["./src/core/*"],
+      "@/niches": ["./src/niches/index.ts"],
+      "@/niches/*": ["./src/niches/*"],
       "@/*": ["./*"]
     }
   },

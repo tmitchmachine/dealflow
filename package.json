@@ -7,23 +7,30 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "list": "tsx src/core/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "test:data": "node scripts/verify-data.mjs",
     "test:opportunities": "npx --yes tsx scripts/smoke-opportunities.mjs",
     "refresh:markets": "node scripts/refresh-markets.mjs"
   },
   "dependencies": {
+    "csv-parse": "^7.0.3",
+    "csv-stringify": "^6.9.0",
     "next": "16.2.9",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "tsx": "^4.19.2",
+    "typescript": "^5",
+    "vitest": "^5.0.5"
   }
 }

@@ -1,0 +1,6 @@
+LicenseNo,BusinessName,FullBusinessName,MailingAddress,City,County,ZIPCode,BusinessPhone,BusinessType,IssueDate,PrimaryStatus,Classifications(s),WorkersCompCoverageType
+9000001,FAKE COOL AIR INC,FAKE COOL AIR INC,100 EXAMPLE WAY,IRVINE,Orange,92612,(555) 010 0001,Corporation,01/15/1985,CLEAR,C20| C10,Workers' Compensation Insurance
+9000002,TESTER SAM,SAM TESTER HEATING,22 SAMPLE ST,PASADENA,Los Angeles,91101,(555) 010 0002,Sole Owner,06/01/2010,CLEAR,C20,Workers' Compensation Insurance
+9000003,DEMO PLUMBING INC,DEMO PLUMBING INC,3 NOWHERE RD,IRVINE,Orange,92612,(555) 010 0003,Corporation,01/01/1980,CLEAR,C36,Workers' Compensation Insurance
+9000004,PLACEHOLDER AIR LLC,PLACEHOLDER AIR LLC,4 GONE AVE,ANAHEIM,Orange,92805,(555) 010 0004,Limited Liability,03/03/1999,Work Comp Susp,C20,License does not have current W/C
+9000005,NO RECORDS HVAC CORP,NO RECORDS HVAC CORP,5 QUIET LN,TUSTIN,Orange,92780,,Corporation,02/02/1990,CLEAR,C20,Workers' Compensation Insurance

@@ -1,9 +1,7 @@
 import { getListingsWithMeta } from "./lib/data";
 import { getMarkets } from "./lib/markets";
 import { scanListings } from "./lib/scoring";
-import { getBusinesses } from "./lib/business/data";
-import { scanBusinesses } from "./lib/business/scoring";
-import { DealDesk } from "./components/DealDesk";
+import { NicheBooksLoader } from "./components/NicheBooksLoader";
 
 /** Weekly refresh: one regeneration spends 5 RentCast calls (one per
  * metro), and the free tier is ~50/month. See README > Live data sources. */
@@ -14,13 +12,8 @@ export default async function Home() {
     await Promise.all([getListingsWithMeta(), getMarkets()]);
 
   const properties = scanListings(listings, markets);
-  const businesses = scanBusinesses(getBusinesses());
-
-  const actionable =
-    properties.filter((s) => s.isActionable).length + businesses.filter((s) => s.isActionable).length;
-  const pursue =
-    properties.filter((s) => s.verdict === "pursue").length +
-    businesses.filter((s) => s.verdict === "pursue").length;
+  const actionableProps = properties.filter((s) => s.isActionable).length;
+  const pursueProps = properties.filter((s) => s.verdict === "pursue").length;
 
   const listingLabel =
     source === "rentcast"
@@ -38,30 +31,30 @@ export default async function Home() {
           Dealflow — opportunity desk
         </div>
         <h1 className="mt-1 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-          {properties.length} properties · {businesses.length} businesses · {actionable} actionable
+          {properties.length} properties · California license indexes load below ·{" "}
+          {actionableProps} RE actionable
         </h1>
         <p className="mt-1 text-zinc-500">
-          Everything in one book by default, ranked best → worst on investability. Properties clear
-          DSCR / strategy gates; businesses clear SDE-multiple and transfer / sell-readiness gates.{" "}
-          {pursue} marked pursue.
+          Real estate plus accounting and HVAC license indexes in one book, ranked best →
+          worst on investability. HVAC is comparison only. {pursueProps} properties marked
+          pursue.
         </p>
         <p className="mt-2 text-xs text-zinc-400">
           Data: {listingLabel} · market $/sqft from {marketLabel}
-          {rentcastRent ? " · rent $/sqft enriched via RentCast" : ""} · businesses from curated
-          demo catalog.
+          {rentcastRent ? " · rent $/sqft enriched via RentCast" : ""} · niches via{" "}
+          <code>/api/niches</code> (Orange County top 200).
         </p>
       </header>
 
-      <DealDesk properties={properties} businesses={businesses} />
+      <NicheBooksLoader properties={properties} />
 
-      <footer className="mt-10 text-xs text-zinc-400">
-        Scores and verdicts are estimates from a heuristic model — not investment advice.
+      <footer className="mt-10 space-y-2 text-xs text-zinc-400">
+        <p>Scores and verdicts are estimates from heuristic models — not investment advice.</p>
         {source === "mock" && (
-          <>
-            {" "}
+          <p>
             Property records are demo data until <code>RENTCAST_API_KEY</code> and{" "}
             <code>RENTCAST_LIVE=1</code> are set in <code>.env.local</code>.
-          </>
+          </p>
         )}
       </footer>
     </main>

@@ -2,31 +2,45 @@
 
 import { useMemo, useState } from "react";
 import type { ScoredListing } from "../lib/scoring";
-import type { ScoredBusiness } from "../lib/business/scoring";
+import type { NicheFirmCardData } from "../lib/niches/types";
 import { PropertyCard } from "./PropertyCard";
-import { BusinessCard } from "./BusinessCard";
+import { NicheFirmCard } from "./NicheFirmCard";
 
-type Tab = "all" | "property" | "business";
+type Tab = "all" | "property" | "accounting" | "hvac";
 type SortKey = "best" | "score";
 
 type DeskItem =
-  | { kind: "property"; scored: ScoredListing; investability: number; isActionable: boolean; overallScore: number }
-  | { kind: "business"; scored: ScoredBusiness; investability: number; isActionable: boolean; overallScore: number };
+  | {
+      kind: "property";
+      scored: ScoredListing;
+      investability: number;
+      isActionable: boolean;
+      overallScore: number;
+    }
+  | {
+      kind: "niche";
+      firm: NicheFirmCardData;
+      investability: number;
+      isActionable: boolean;
+      overallScore: number;
+    };
 
 const TABS: { key: Tab; label: string }[] = [
   { key: "all", label: "All" },
   { key: "property", label: "Real estate" },
-  { key: "business", label: "Businesses" },
+  { key: "accounting", label: "Accounting" },
+  { key: "hvac", label: "HVAC" },
 ];
 
 export function DealDesk({
   properties,
-  businesses,
+  accounting,
+  hvac,
 }: {
   properties: ScoredListing[];
-  businesses: ScoredBusiness[];
+  accounting: NicheFirmCardData[];
+  hvac: NicheFirmCardData[];
 }) {
-  // Default: All deals in one book, best → worst by investability.
   const [tab, setTab] = useState<Tab>("all");
   const [sort, setSort] = useState<SortKey>("best");
   const [actionableOnly, setActionableOnly] = useState(false);
@@ -41,28 +55,36 @@ export function DealDesk({
       isActionable: s.isActionable,
       overallScore: s.overallScore,
     }));
-    const biz: DeskItem[] = businesses.map((s) => ({
-      kind: "business",
-      scored: s,
-      investability: s.investability,
-      isActionable: s.isActionable,
-      overallScore: s.overallScore,
+    const acct: DeskItem[] = accounting.map((firm) => ({
+      kind: "niche",
+      firm,
+      investability: firm.investability,
+      isActionable: firm.isActionable,
+      overallScore: firm.score,
+    }));
+    const hvacItems: DeskItem[] = hvac.map((firm) => ({
+      kind: "niche",
+      firm,
+      investability: firm.investability,
+      isActionable: firm.isActionable,
+      overallScore: firm.score,
     }));
 
-    let pool =
-      tab === "property" ? props : tab === "business" ? biz : [...props, ...biz];
+    let pool: DeskItem[];
+    if (tab === "property") pool = props;
+    else if (tab === "accounting") pool = acct;
+    else if (tab === "hvac") pool = hvacItems;
+    else pool = [...props, ...acct, ...hvacItems];
 
     pool = pool.filter((item) => {
       if (actionableOnly && !item.isActionable) return false;
       if (item.investability < minInvestability) return false;
-      if (hideHighRisk) {
-        const risks = item.scored.risks;
-        if (risks.some((r) => r.level === "high")) return false;
+      if (hideHighRisk && item.kind === "property") {
+        if (item.scored.risks.some((r) => r.level === "high")) return false;
       }
       return true;
     });
 
-    // Single ladder: investability is the cross-asset "how good is this deal" rank.
     pool.sort((a, b) => {
       if (sort === "score") {
         if (b.overallScore !== a.overallScore) return b.overallScore - a.overallScore;
@@ -73,10 +95,21 @@ export function DealDesk({
     });
 
     return pool;
-  }, [properties, businesses, tab, sort, actionableOnly, hideHighRisk, minInvestability]);
+  }, [
+    properties,
+    accounting,
+    hvac,
+    tab,
+    sort,
+    actionableOnly,
+    hideHighRisk,
+    minInvestability,
+  ]);
 
   const actionableCount =
-    properties.filter((p) => p.isActionable).length + businesses.filter((b) => b.isActionable).length;
+    properties.filter((p) => p.isActionable).length +
+    accounting.filter((f) => f.isActionable).length +
+    hvac.filter((f) => f.isActionable).length;
 
   return (
     <div className="flex flex-col gap-5">
@@ -96,7 +129,7 @@ export function DealDesk({
           </button>
         ))}
         <span className="ml-auto text-xs text-zinc-400">
-          {actionableCount} actionable across both books
+          {actionableCount} actionable across the desk
         </span>
       </div>
 
@@ -140,12 +173,10 @@ export function DealDesk({
             checked={hideHighRisk}
             onChange={(e) => setHideHighRisk(e.target.checked)}
           />
-          <span className="text-zinc-500">Hide high-risk</span>
+          <span className="text-zinc-500">Hide high-risk RE</span>
         </label>
 
-        <span className="ml-auto text-zinc-400">
-          {items.length} shown
-        </span>
+        <span className="ml-auto text-zinc-400">{items.length} shown</span>
       </div>
 
       {items.length === 0 ? (
@@ -158,7 +189,10 @@ export function DealDesk({
             item.kind === "property" ? (
               <PropertyCard key={`p-${item.scored.listing.id}`} scored={item.scored} />
             ) : (
-              <BusinessCard key={`b-${item.scored.listing.id}`} scored={item.scored} />
+              <NicheFirmCard
+                key={`${item.firm.nicheId}-${item.firm.licenseNumber}`}
+                firm={item.firm}
+              />
             ),
           )}
         </div>

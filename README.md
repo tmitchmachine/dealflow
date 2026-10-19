@@ -9,11 +9,12 @@ opinion of value and only promoting deals that clear hard gates.
 - **Real estate.** Independent AVM from market $/sqft, then DSCR, break-even
   occupancy, hold vs flip strategy fit, and a pursue / negotiate / watch / pass
   verdict (not just a pretty score).
-- **Businesses (buy).** Fair value from risk-adjusted SDE multiples — transfer
-  risk, customer concentration, docs quality, and trend haircut the multiple.
-- **Businesses (help sell).** Sell-readiness score and concrete advice (reprice,
-  document SOPs, assemble financials) so owners can actually get to close.
-- **Opportunity desk.** One ranked view across both books, actionable-first.
+- **California license indexes.** Ranked accounting firms (Board of Accountancy)
+  and HVAC contractors (CSLB) from public license files — off-market deal
+  sourcing by published tenure factors. Accounting is the selling index; HVAC
+  is comparison only.
+- **Opportunity desk.** One ranked view across real estate and license indexes,
+  actionable-first.
 
 Property listing adapters started from
 [ReturnState Property](https://github.com/tmitchmachine/returnstateproperty).
@@ -98,6 +99,46 @@ company to market (and what to fix first).
 
 Without `RENTCAST_LIVE=1`, the app serves the curated mock listing catalog so
 local demos still work. Market stats still load from Redfin (live or snapshot).
+
+### California license indexes (accounting + HVAC)
+
+The desk loads Orange County top-200 lists for each index via `app/lib/niches/load.ts`:
+
+1. **Preferred:** live state files in `data/raw/` (gitignored).
+2. **Fallback:** previously written `out/<cpa|hvac>-*.csv` exports from `npm run list`.
+
+```bash
+npm run list -- --counties "Orange" --limit 200                  # accounting
+npm run list -- --niche hvac --counties "Orange" --limit 200
+npm test                                                         # niche unit tests
+```
+
+**Accounting raw file:** download `Accountancy_Data00.xls` from DCA's Box folder
+into `data/raw/` (see [IDEAS.md](IDEAS.md) / public DCA licensee lists).
+
+**HVAC raw files:** CSLB License Master + Personnel CSVs as
+`data/raw/cslb/MasterLicenseData.csv` and `data/raw/cslb/PersonnelData.csv`.
+
+#### Accounting factors (max 100)
+
+| Factor | Column | Max | How it's earned |
+| --- | --- | --- | --- |
+| Years registered | `pts_firm_years` | 40 | Years since the firm registered with the Board; full points at 30 years |
+| Entity type | `pts_entity` | 15 | CPA corporation or partnership 15; registered firm name (typically a sole practice) 5 |
+| License status | `pts_status` | 10 | Active license |
+| Senior CPA | `pts_senior_cpa` | 20 | A matched CPA licensed 30+ years (needs a high-confidence CPA match) |
+| No recent CPA | `pts_no_recent_cpa` | 15 | Every matched CPA licensed 15+ years (needs a high-confidence CPA match) |
+
+#### HVAC factors (max 100)
+
+| Factor | Column | Max | How it's earned |
+| --- | --- | --- | --- |
+| Years licensed | `pts_license_years` | 35 | Years since the CSLB license was issued; full points at 30 years |
+| Business type | `pts_entity` | 10 | Corporation, LLC, partnership or joint venture 10; sole owner 5 |
+| Extra trades | `pts_extra_classifications` | 5 | Licensed for more than C-20 alone |
+| License status | `pts_status` | 10 | CLEAR license status |
+| Owner tenure | `pts_owner_tenure` | 25 | Longest-serving current owner/officer's years on the license; full points at 30 years |
+| No recent owner | `pts_no_recent_owner` | 15 | Every current owner/officer joined 15+ years ago |
 
 Redfin's metro tracker is a ~106MB gzip, so it is **never downloaded during a
 render** — a request is served from the committed snapshot (or the in-process
