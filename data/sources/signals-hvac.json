@@ -1,0 +1,4513 @@
+{
+ "generatedAt": "2026-10-19T03:20:58.674Z",
+ "baseline": null,
+ "latest": "2026-10-18",
+ "firms": {
+  "22445": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2025",
+    "date": "2025-02-28"
+   }
+  ],
+  "91594": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President left Jun 2026",
+    "date": "2026-06-18"
+   }
+  ],
+  "114040": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2025",
+    "date": "2025-03-11"
+   }
+  ],
+  "120696": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-29"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee/Responsible Managing Officer left May 2026",
+    "date": "2026-05-26"
+   }
+  ],
+  "178385": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-08"
+   }
+  ],
+  "188751": [
+   {
+    "kind": "deceased",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President deceased (Jul 2025)",
+    "date": "2025-07-29"
+   }
+  ],
+  "198821": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2025",
+    "date": "2025-02-24"
+   }
+  ],
+  "215233": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2024",
+    "date": "2024-12-13"
+   }
+  ],
+  "236164": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-13"
+   }
+  ],
+  "238921": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-08"
+   }
+  ],
+  "239763": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Mar 2026",
+    "date": "2026-03-01"
+   }
+  ],
+  "242528": [
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2024",
+    "date": "2024-11-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Oct 2024",
+    "date": "2024-10-31"
+   }
+  ],
+  "247442": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-31"
+   }
+  ],
+  "256026": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2025",
+    "date": "2025-09-25"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2025",
+    "date": "2025-07-22"
+   }
+  ],
+  "256821": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-18"
+   }
+  ],
+  "271933": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-01"
+   }
+  ],
+  "291740": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-15"
+   }
+  ],
+  "292946": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-29"
+   },
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-01"
+   }
+  ],
+  "299969": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Aug 2025",
+    "date": "2025-08-04"
+   }
+  ],
+  "305365": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Chief Executive Officer/President left Aug 2025",
+    "date": "2025-08-04"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2025",
+    "date": "2025-08-04"
+   }
+  ],
+  "315631": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Officer left Jul 2026",
+    "date": "2026-07-31"
+   }
+  ],
+  "321580": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-29"
+   }
+  ],
+  "322738": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Oct 2024",
+    "date": "2024-10-25"
+   }
+  ],
+  "323732": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2025",
+    "date": "2025-07-08"
+   }
+  ],
+  "330604": [
+   {
+    "kind": "departure",
+    "label": "Officer/Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President left Jul 2025",
+    "date": "2025-07-14"
+   }
+  ],
+  "330785": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left May 2025",
+    "date": "2025-05-27"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-27"
+   }
+  ],
+  "340838": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2025",
+    "date": "2025-09-15"
+   }
+  ],
+  "341107": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-17"
+   }
+  ],
+  "345260": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Employee/Continuance Granted/Sole Owner deceased (Sep 2025)",
+    "date": "2025-09-18"
+   }
+  ],
+  "348810": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-28"
+   }
+  ],
+  "365598": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left May 2026",
+    "date": "2026-05-14"
+   }
+  ],
+  "375584": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee/Responsible Managing Officer/Responsible Managing Officer/Chief Executive Officer/President/Officer left Apr 2025",
+    "date": "2025-04-24"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Responsible Managing Officer/Chief Executive Officer/President left Jan 2025",
+    "date": "2025-01-24"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-17"
+   }
+  ],
+  "379530": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-31"
+   }
+  ],
+  "388361": [
+   {
+    "kind": "deceased",
+    "label": "Officer/Responsible Managing Officer/Responsible Managing Officer/Chief Executive Officer/President deceased (Jun 2026)",
+    "date": "2026-06-04"
+   }
+  ],
+  "391749": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer left Mar 2026",
+    "date": "2026-03-27"
+   }
+  ],
+  "396539": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-31"
+   }
+  ],
+  "398668": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-15"
+   }
+  ],
+  "408622": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-10"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-11"
+   }
+  ],
+  "414631": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-16"
+   }
+  ],
+  "419626": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer/Officer left Jun 2026",
+    "date": "2026-06-22"
+   }
+  ],
+  "420418": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-06"
+   }
+  ],
+  "420827": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Dec 2024",
+    "date": "2024-12-20"
+   }
+  ],
+  "422106": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Responsible Managing Officer/Chief Executive Officer/President left Dec 2025",
+    "date": "2025-12-09"
+   }
+  ],
+  "424370": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-15"
+   }
+  ],
+  "429901": [
+   {
+    "kind": "deceased",
+    "label": "Officer deceased (Oct 2025)",
+    "date": "2025-10-10"
+   }
+  ],
+  "433607": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Mar 2026",
+    "date": "2026-03-18"
+   }
+  ],
+  "440532": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Aug 2025",
+    "date": "2025-08-19"
+   }
+  ],
+  "441882": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Jan 2026)",
+    "date": "2026-01-31"
+   }
+  ],
+  "442257": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-20"
+   }
+  ],
+  "449671": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-15"
+   }
+  ],
+  "453261": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-11"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Apr 2026",
+    "date": "2026-04-05"
+   }
+  ],
+  "453302": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-11"
+   }
+  ],
+  "457906": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Chief Executive Officer/President deceased (Feb 2026)",
+    "date": "2026-02-17"
+   }
+  ],
+  "460213": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-01"
+   }
+  ],
+  "461076": [
+   {
+    "kind": "deceased",
+    "label": "Officer/Chief Executive Officer/President deceased (Feb 2025)",
+    "date": "2025-02-02"
+   }
+  ],
+  "467256": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2026",
+    "date": "2026-06-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2026",
+    "date": "2026-08-06"
+   }
+  ],
+  "469919": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-12"
+   }
+  ],
+  "470556": [
+   {
+    "kind": "departure",
+    "label": "Officer/Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President left Mar 2025",
+    "date": "2025-03-03"
+   }
+  ],
+  "470723": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President left Apr 2025",
+    "date": "2025-04-16"
+   }
+  ],
+  "472592": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Mar 2025",
+    "date": "2025-03-31"
+   }
+  ],
+  "472954": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Feb 2026)",
+    "date": "2026-02-26"
+   }
+  ],
+  "475267": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2025",
+    "date": "2025-05-09"
+   }
+  ],
+  "482290": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Nov 2024",
+    "date": "2024-11-22"
+   }
+  ],
+  "483881": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer deceased (Mar 2025)",
+    "date": "2025-03-03"
+   }
+  ],
+  "488517": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Dec 2025",
+    "date": "2025-12-22"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-01"
+   }
+  ],
+  "491840": [
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2026",
+    "date": "2026-08-21"
+   }
+  ],
+  "496061": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-06"
+   }
+  ],
+  "504624": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-31"
+   }
+  ],
+  "520449": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-08"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Officer left Apr 2025",
+    "date": "2025-04-25"
+   }
+  ],
+  "522540": [
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2025",
+    "date": "2025-08-15"
+   }
+  ],
+  "525314": [
+   {
+    "kind": "deceased",
+    "label": "Officer deceased (Dec 2025)",
+    "date": "2025-12-09"
+   }
+  ],
+  "536465": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-23"
+   }
+  ],
+  "549948": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Feb 2026",
+    "date": "2026-02-02"
+   }
+  ],
+  "559305": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-15"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-21"
+   }
+  ],
+  "569680": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-08"
+   }
+  ],
+  "570541": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2025",
+    "date": "2025-07-14"
+   }
+  ],
+  "574447": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Apr 2025",
+    "date": "2025-04-03"
+   }
+  ],
+  "577548": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Oct 2026",
+    "date": "2026-10-08"
+   }
+  ],
+  "581590": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Nov 2024)",
+    "date": "2024-11-15"
+   }
+  ],
+  "582686": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-01"
+   }
+  ],
+  "583829": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-01"
+   }
+  ],
+  "583838": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-01"
+   }
+  ],
+  "584319": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Sep 2025",
+    "date": "2025-09-02"
+   }
+  ],
+  "584591": [
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2025",
+    "date": "2025-11-01"
+   }
+  ],
+  "587424": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-21"
+   }
+  ],
+  "587827": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Officer left Mar 2026",
+    "date": "2026-03-06"
+   }
+  ],
+  "590084": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Mar 2026",
+    "date": "2026-03-23"
+   }
+  ],
+  "595145": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Oct 2026",
+    "date": "2026-10-09"
+   }
+  ],
+  "597398": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-09"
+   }
+  ],
+  "606438": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-24"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-30"
+   }
+  ],
+  "608005": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-15"
+   }
+  ],
+  "608302": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-28"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Officer/Responsible Managing Officer/Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-05"
+   }
+  ],
+  "608469": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-05"
+   }
+  ],
+  "611215": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-09"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President left Jul 2025",
+    "date": "2025-07-02"
+   }
+  ],
+  "611351": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2026",
+    "date": "2026-08-14"
+   }
+  ],
+  "613784": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2025",
+    "date": "2025-09-09"
+   }
+  ],
+  "618395": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-04"
+   }
+  ],
+  "620462": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2025",
+    "date": "2025-01-16"
+   }
+  ],
+  "623901": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-02"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer/Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President left Jul 2025",
+    "date": "2025-07-03"
+   }
+  ],
+  "628906": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-06"
+   }
+  ],
+  "633040": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President left May 2025",
+    "date": "2025-05-20"
+   }
+  ],
+  "638992": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2026",
+    "date": "2026-03-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Jul 2026",
+    "date": "2026-07-17"
+   }
+  ],
+  "639065": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Jul 2026",
+    "date": "2026-07-27"
+   }
+  ],
+  "640131": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2026",
+    "date": "2026-06-15"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2026",
+    "date": "2026-06-15"
+   }
+  ],
+  "645126": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2025",
+    "date": "2025-05-14"
+   }
+  ],
+  "646794": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2026",
+    "date": "2026-05-06"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Oct 2025",
+    "date": "2025-10-30"
+   }
+  ],
+  "651284": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-06"
+   }
+  ],
+  "652354": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Dec 2025",
+    "date": "2025-12-15"
+   }
+  ],
+  "658370": [
+   {
+    "kind": "deceased",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President deceased (Apr 2025)",
+    "date": "2025-04-23"
+   }
+  ],
+  "659142": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-01"
+   }
+  ],
+  "662165": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left Dec 2024",
+    "date": "2024-12-03"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-06"
+   }
+  ],
+  "672679": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President deceased (Jan 2025)",
+    "date": "2025-01-11"
+   }
+  ],
+  "677263": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Nov 2025",
+    "date": "2025-11-14"
+   }
+  ],
+  "679326": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Responsible Managing Officer/Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-03"
+   }
+  ],
+  "681518": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President deceased (Nov 2024)",
+    "date": "2024-11-14"
+   }
+  ],
+  "685117": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Nov 2024",
+    "date": "2024-11-06"
+   }
+  ],
+  "686310": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2026",
+    "date": "2026-09-17"
+   }
+  ],
+  "687041": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President left Jul 2026",
+    "date": "2026-07-13"
+   }
+  ],
+  "687489": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left May 2025",
+    "date": "2025-05-07"
+   }
+  ],
+  "687653": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President deceased (Jan 2026)",
+    "date": "2026-01-30"
+   }
+  ],
+  "691278": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-06"
+   }
+  ],
+  "693979": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Jun 2026",
+    "date": "2026-06-22"
+   }
+  ],
+  "696355": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-04"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left May 2025",
+    "date": "2025-05-07"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-20"
+   }
+  ],
+  "699789": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-09"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-09"
+   }
+  ],
+  "703618": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Feb 2025",
+    "date": "2025-02-03"
+   }
+  ],
+  "705148": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Nov 2024",
+    "date": "2024-11-21"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2024",
+    "date": "2024-11-01"
+   }
+  ],
+  "716538": [
+   {
+    "kind": "departure",
+    "label": "LLC Member left Dec 2025",
+    "date": "2025-12-15"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Apr 2026",
+    "date": "2026-04-08"
+   }
+  ],
+  "720833": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Apr 2026",
+    "date": "2026-04-23"
+   }
+  ],
+  "724671": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-06"
+   }
+  ],
+  "726129": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Dec 2025",
+    "date": "2025-12-15"
+   }
+  ],
+  "729797": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-23"
+   }
+  ],
+  "731514": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-31"
+   }
+  ],
+  "735518": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left May 2025",
+    "date": "2025-05-07"
+   }
+  ],
+  "737988": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-16"
+   }
+  ],
+  "740872": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-31"
+   }
+  ],
+  "741000": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Oct 2025",
+    "date": "2025-10-07"
+   }
+  ],
+  "742039": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left Dec 2024",
+    "date": "2024-12-16"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-15"
+   }
+  ],
+  "744619": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-09"
+   }
+  ],
+  "750019": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Aug 2026",
+    "date": "2026-08-13"
+   }
+  ],
+  "756018": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2025",
+    "date": "2025-02-06"
+   }
+  ],
+  "758796": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2025",
+    "date": "2025-01-10"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-12"
+   }
+  ],
+  "759496": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Dec 2024",
+    "date": "2024-12-27"
+   }
+  ],
+  "763154": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Oct 2025",
+    "date": "2025-10-13"
+   }
+  ],
+  "763576": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-27"
+   }
+  ],
+  "763589": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-25"
+   }
+  ],
+  "764416": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Apr 2026",
+    "date": "2026-04-07"
+   }
+  ],
+  "765074": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-15"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left May 2025",
+    "date": "2025-05-05"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2025",
+    "date": "2025-05-12"
+   }
+  ],
+  "767197": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Aug 2025",
+    "date": "2025-08-31"
+   }
+  ],
+  "774877": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-17"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Apr 2026",
+    "date": "2026-04-17"
+   },
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-25"
+   }
+  ],
+  "778556": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Chief Executive Officer/President left Jul 2026",
+    "date": "2026-07-31"
+   }
+  ],
+  "780352": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-29"
+   }
+  ],
+  "783316": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-27"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-27"
+   }
+  ],
+  "783455": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Jul 2025",
+    "date": "2025-07-14"
+   }
+  ],
+  "790312": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Dec 2025",
+    "date": "2025-12-10"
+   }
+  ],
+  "791820": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-16"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-30"
+   }
+  ],
+  "793014": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2025",
+    "date": "2025-02-05"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-03"
+   }
+  ],
+  "795540": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-15"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-16"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer/Responsible Managing Employee left Aug 2026",
+    "date": "2026-08-11"
+   }
+  ],
+  "795556": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-05"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-16"
+   }
+  ],
+  "796755": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-28"
+   }
+  ],
+  "798850": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2024",
+    "date": "2024-10-27"
+   }
+  ],
+  "799170": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Manager/Responsible Managing Officer left Jan 2026",
+    "date": "2026-01-21"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-20"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-20"
+   }
+  ],
+  "800423": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-11"
+   }
+  ],
+  "800575": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Chief Executive Officer/President deceased (May 2025)",
+    "date": "2025-05-21"
+   }
+  ],
+  "814802": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer left Mar 2026",
+    "date": "2026-03-25"
+   }
+  ],
+  "817040": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Member left Jan 2026",
+    "date": "2026-01-06"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2026",
+    "date": "2026-04-13"
+   }
+  ],
+  "817514": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2025",
+    "date": "2025-02-20"
+   }
+  ],
+  "818957": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Apr 2025",
+    "date": "2025-04-14"
+   }
+  ],
+  "821844": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Responsible Managing Officer/Chief Executive Officer/President left Jun 2026",
+    "date": "2026-06-09"
+   }
+  ],
+  "826606": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-27"
+   }
+  ],
+  "827711": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2026",
+    "date": "2026-01-20"
+   }
+  ],
+  "827963": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (May 2026)",
+    "date": "2026-05-13"
+   }
+  ],
+  "828335": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-31"
+   }
+  ],
+  "828672": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jul 2026",
+    "date": "2026-07-24"
+   }
+  ],
+  "829861": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee/Responsible Managing Officer/Chief Executive Officer/President left Sep 2025",
+    "date": "2025-09-29"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-02"
+   }
+  ],
+  "834662": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Feb 2025",
+    "date": "2025-02-20"
+   }
+  ],
+  "840012": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-31"
+   }
+  ],
+  "842258": [
+   {
+    "kind": "departure",
+    "label": "Officer left Apr 2026",
+    "date": "2026-04-22"
+   }
+  ],
+  "845047": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President deceased (Feb 2025)",
+    "date": "2025-02-18"
+   }
+  ],
+  "845219": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer/Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-25"
+   }
+  ],
+  "845350": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Mar 2026",
+    "date": "2026-03-23"
+   }
+  ],
+  "846530": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Officer left Sep 2025",
+    "date": "2025-09-24"
+   }
+  ],
+  "847444": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Member/Officer left Dec 2025",
+    "date": "2025-12-19"
+   }
+  ],
+  "852708": [
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2026",
+    "date": "2026-08-01"
+   }
+  ],
+  "855174": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2025",
+    "date": "2025-01-15"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-03"
+   }
+  ],
+  "855330": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Jan 2026",
+    "date": "2026-01-16"
+   }
+  ],
+  "856047": [
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2025",
+    "date": "2025-11-06"
+   }
+  ],
+  "857180": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2025",
+    "date": "2025-04-14"
+   }
+  ],
+  "858088": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2026",
+    "date": "2026-09-25"
+   }
+  ],
+  "858319": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President deceased (May 2026)",
+    "date": "2026-05-28"
+   }
+  ],
+  "860445": [
+   {
+    "kind": "departure",
+    "label": "Officer left Sep 2025",
+    "date": "2025-09-18"
+   }
+  ],
+  "863274": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-14"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-11"
+   }
+  ],
+  "863384": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2026",
+    "date": "2026-04-03"
+   }
+  ],
+  "867909": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-04"
+   }
+  ],
+  "871281": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2024",
+    "date": "2024-12-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2024",
+    "date": "2024-11-12"
+   }
+  ],
+  "883501": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Dec 2025",
+    "date": "2025-12-16"
+   }
+  ],
+  "884512": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Jul 2025)",
+    "date": "2025-07-11"
+   }
+  ],
+  "887975": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-11"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-11"
+   }
+  ],
+  "888597": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2026",
+    "date": "2026-08-14"
+   }
+  ],
+  "888867": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-28"
+   }
+  ],
+  "890565": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President deceased (Feb 2026)",
+    "date": "2026-02-19"
+   }
+  ],
+  "891076": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left May 2025",
+    "date": "2025-05-13"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-31"
+   }
+  ],
+  "899816": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Jul 2025",
+    "date": "2025-07-24"
+   }
+  ],
+  "904951": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-02"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-02"
+   }
+  ],
+  "906387": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2025",
+    "date": "2025-02-04"
+   }
+  ],
+  "907875": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2025",
+    "date": "2025-07-31"
+   }
+  ],
+  "910358": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Aug 2025",
+    "date": "2025-08-28"
+   }
+  ],
+  "913213": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Apr 2026",
+    "date": "2026-04-01"
+   }
+  ],
+  "913717": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-21"
+   }
+  ],
+  "920062": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Nov 2025",
+    "date": "2025-11-25"
+   }
+  ],
+  "920387": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-14"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-26"
+   }
+  ],
+  "920850": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-08"
+   }
+  ],
+  "921266": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-19"
+   }
+  ],
+  "922007": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-28"
+   }
+  ],
+  "923970": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left Oct 2025",
+    "date": "2025-10-17"
+   }
+  ],
+  "924919": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-01"
+   }
+  ],
+  "925985": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-01"
+   }
+  ],
+  "926428": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2025",
+    "date": "2025-04-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2025",
+    "date": "2025-06-19"
+   }
+  ],
+  "931126": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-20"
+   }
+  ],
+  "942194": [
+   {
+    "kind": "departure",
+    "label": "Officer left Sep 2026",
+    "date": "2026-09-01"
+   }
+  ],
+  "946657": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-14"
+   }
+  ],
+  "947497": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2025",
+    "date": "2025-09-18"
+   }
+  ],
+  "950139": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2026",
+    "date": "2026-06-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-12"
+   }
+  ],
+  "950443": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-29"
+   }
+  ],
+  "951481": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-17"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-01"
+   }
+  ],
+  "952668": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-17"
+   }
+  ],
+  "954331": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2026",
+    "date": "2026-08-17"
+   }
+  ],
+  "955806": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer left Feb 2025",
+    "date": "2025-02-27"
+   }
+  ],
+  "956191": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-30"
+   }
+  ],
+  "957376": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2025",
+    "date": "2025-04-17"
+   }
+  ],
+  "958601": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Apr 2026)",
+    "date": "2026-04-15"
+   }
+  ],
+  "959094": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-28"
+   }
+  ],
+  "962629": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Jan 2026",
+    "date": "2026-01-01"
+   }
+  ],
+  "965676": [
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2025",
+    "date": "2025-08-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2025",
+    "date": "2025-08-30"
+   }
+  ],
+  "966337": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2025",
+    "date": "2025-11-24"
+   }
+  ],
+  "966886": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2025",
+    "date": "2025-02-24"
+   }
+  ],
+  "967732": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Oct 2025",
+    "date": "2025-10-31"
+   }
+  ],
+  "967965": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Member/LLC Member left Aug 2025",
+    "date": "2025-08-01"
+   }
+  ],
+  "968076": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-06"
+   }
+  ],
+  "969939": [
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2025",
+    "date": "2025-11-14"
+   }
+  ],
+  "971329": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Oct 2025",
+    "date": "2025-10-09"
+   }
+  ],
+  "974212": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-06"
+   }
+  ],
+  "974381": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-01"
+   }
+  ],
+  "975808": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-14"
+   }
+  ],
+  "976012": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-20"
+   }
+  ],
+  "976065": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-31"
+   }
+  ],
+  "976865": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-20"
+   }
+  ],
+  "979330": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left Mar 2026",
+    "date": "2026-03-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-27"
+   }
+  ],
+  "979775": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President left Apr 2025",
+    "date": "2025-04-10"
+   }
+  ],
+  "982295": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-09"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-15"
+   }
+  ],
+  "984374": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-31"
+   }
+  ],
+  "984528": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2026",
+    "date": "2026-08-07"
+   }
+  ],
+  "984827": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2026",
+    "date": "2026-09-02"
+   }
+  ],
+  "985460": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-11"
+   }
+  ],
+  "985613": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Sep 2025",
+    "date": "2025-09-19"
+   }
+  ],
+  "985920": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-04"
+   }
+  ],
+  "986539": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2025",
+    "date": "2025-04-10"
+   }
+  ],
+  "987201": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-12"
+   }
+  ],
+  "987217": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Oct 2025",
+    "date": "2025-10-31"
+   }
+  ],
+  "987398": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2026",
+    "date": "2026-03-23"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-24"
+   },
+   {
+    "kind": "departure",
+    "label": "LLC Manager left May 2025",
+    "date": "2025-05-16"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-03"
+   }
+  ],
+  "987446": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer left Jul 2025",
+    "date": "2025-07-17"
+   }
+  ],
+  "987514": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Apr 2026",
+    "date": "2026-04-28"
+   }
+  ],
+  "991066": [
+   {
+    "kind": "departure",
+    "label": "LLC Manager left Feb 2025",
+    "date": "2025-02-07"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2026",
+    "date": "2026-05-11"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Manager left Nov 2024",
+    "date": "2024-11-14"
+   }
+  ],
+  "991373": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-20"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-02"
+   }
+  ],
+  "991604": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-28"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-28"
+   },
+   {
+    "kind": "departure",
+    "label": "LLC Director left Mar 2026",
+    "date": "2026-03-28"
+   }
+  ],
+  "991748": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-04"
+   }
+  ],
+  "991832": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-13"
+   },
+   {
+    "kind": "departure",
+    "label": "LLC Member left Oct 2025",
+    "date": "2025-10-13"
+   }
+  ],
+  "992930": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Officer left Jan 2025",
+    "date": "2025-01-01"
+   }
+  ],
+  "993589": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2025",
+    "date": "2025-07-10"
+   }
+  ],
+  "994497": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer deceased (May 2025)",
+    "date": "2025-05-22"
+   }
+  ],
+  "996688": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-18"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-22"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Responsible Managing Employee left Sep 2026",
+    "date": "2026-09-15"
+   }
+  ],
+  "998040": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-11"
+   }
+  ],
+  "998265": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Oct 2024",
+    "date": "2024-10-31"
+   }
+  ],
+  "999179": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President/Chief Executive Officer/President left Feb 2025",
+    "date": "2025-02-01"
+   }
+  ],
+  "999813": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2025",
+    "date": "2025-05-22"
+   }
+  ],
+  "1000228": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-28"
+   }
+  ],
+  "1000738": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-28"
+   }
+  ],
+  "1001077": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-16"
+   }
+  ],
+  "1001526": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-27"
+   }
+  ],
+  "1001965": [
+   {
+    "kind": "departure",
+    "label": "Officer/Chief Executive Officer/President left Jan 2025",
+    "date": "2025-01-10"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-07"
+   }
+  ],
+  "1003016": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jan 2026",
+    "date": "2026-01-21"
+   }
+  ],
+  "1003148": [
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2025",
+    "date": "2025-11-01"
+   }
+  ],
+  "1003468": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-01"
+   }
+  ],
+  "1004863": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-25"
+   }
+  ],
+  "1004945": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left May 2025",
+    "date": "2025-05-01"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Sep 2025",
+    "date": "2025-09-08"
+   }
+  ],
+  "1005232": [
+   {
+    "kind": "departure",
+    "label": "LLC Member left Jul 2025",
+    "date": "2025-07-01"
+   }
+  ],
+  "1006002": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-22"
+   }
+  ],
+  "1009328": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Chief Executive Officer/President deceased (Jun 2025)",
+    "date": "2025-06-22"
+   }
+  ],
+  "1009617": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-09"
+   }
+  ],
+  "1011173": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2025",
+    "date": "2025-05-12"
+   }
+  ],
+  "1012763": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-24"
+   }
+  ],
+  "1013017": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-03"
+   }
+  ],
+  "1013757": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2025",
+    "date": "2025-01-28"
+   }
+  ],
+  "1013893": [
+   {
+    "kind": "departure",
+    "label": "Sole Owner left Jan 2025",
+    "date": "2025-01-06"
+   }
+  ],
+  "1016168": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President left Jul 2026",
+    "date": "2026-07-28"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-28"
+   }
+  ],
+  "1018218": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-22"
+   }
+  ],
+  "1019385": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-31"
+   }
+  ],
+  "1022608": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-26"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-27"
+   }
+  ],
+  "1022669": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2025",
+    "date": "2025-05-27"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2025",
+    "date": "2025-02-20"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-18"
+   }
+  ],
+  "1025073": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2026",
+    "date": "2026-04-29"
+   }
+  ],
+  "1026474": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Member deceased (Jul 2025)",
+    "date": "2025-07-17"
+   }
+  ],
+  "1026683": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jul 2025",
+    "date": "2025-07-24"
+   }
+  ],
+  "1026761": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President/Responsible Managing Manager/LLC Manager left Jan 2026",
+    "date": "2026-01-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2025",
+    "date": "2025-11-03"
+   }
+  ],
+  "1027193": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jan 2025",
+    "date": "2025-01-10"
+   }
+  ],
+  "1027312": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Apr 2025",
+    "date": "2025-04-24"
+   }
+  ],
+  "1027412": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2026",
+    "date": "2026-05-19"
+   }
+  ],
+  "1027990": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-08"
+   }
+  ],
+  "1028305": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-06"
+   }
+  ],
+  "1028745": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-01"
+   }
+  ],
+  "1031246": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-30"
+   }
+  ],
+  "1031326": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2025",
+    "date": "2025-02-18"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-15"
+   }
+  ],
+  "1032052": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-11"
+   }
+  ],
+  "1032429": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2025",
+    "date": "2025-05-02"
+   }
+  ],
+  "1033309": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Apr 2025)",
+    "date": "2025-04-14"
+   }
+  ],
+  "1033591": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2026",
+    "date": "2026-01-08"
+   }
+  ],
+  "1034281": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2025",
+    "date": "2025-06-13"
+   }
+  ],
+  "1034530": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left May 2025",
+    "date": "2025-05-01"
+   }
+  ],
+  "1036503": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2025",
+    "date": "2025-05-06"
+   }
+  ],
+  "1038524": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Aug 2026)",
+    "date": "2026-08-16"
+   }
+  ],
+  "1040308": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2024",
+    "date": "2024-10-30"
+   }
+  ],
+  "1041260": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-25"
+   }
+  ],
+  "1041536": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2025",
+    "date": "2025-06-03"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-03"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2025",
+    "date": "2025-06-03"
+   }
+  ],
+  "1042289": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Sep 2026",
+    "date": "2026-09-15"
+   }
+  ],
+  "1042634": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2026",
+    "date": "2026-09-01"
+   }
+  ],
+  "1042744": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Dec 2025",
+    "date": "2025-12-15"
+   }
+  ],
+  "1042837": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2025",
+    "date": "2025-06-26"
+   }
+  ],
+  "1043777": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Nov 2024",
+    "date": "2024-11-14"
+   }
+  ],
+  "1044462": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-20"
+   }
+  ],
+  "1045188": [
+   {
+    "kind": "deceased",
+    "label": "Responsible Managing Officer deceased (Mar 2026)",
+    "date": "2026-03-22"
+   }
+  ],
+  "1045651": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Nov 2024",
+    "date": "2024-11-18"
+   }
+  ],
+  "1046431": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-24"
+   }
+  ],
+  "1046689": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-26"
+   }
+  ],
+  "1046762": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-05"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-09"
+   }
+  ],
+  "1046825": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-23"
+   }
+  ],
+  "1047548": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2025",
+    "date": "2025-02-11"
+   }
+  ],
+  "1047813": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left May 2025",
+    "date": "2025-05-02"
+   }
+  ],
+  "1048906": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-28"
+   }
+  ],
+  "1049244": [
+   {
+    "kind": "departure",
+    "label": "LLC Manager left Dec 2024",
+    "date": "2024-12-02"
+   }
+  ],
+  "1050011": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-13"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-18"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-31"
+   }
+  ],
+  "1050268": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2025",
+    "date": "2025-03-17"
+   }
+  ],
+  "1051850": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Mar 2026",
+    "date": "2026-03-03"
+   }
+  ],
+  "1052232": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2025",
+    "date": "2025-02-13"
+   }
+  ],
+  "1053030": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Nov 2025",
+    "date": "2025-11-25"
+   }
+  ],
+  "1053503": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner/Responsible Managing Officer/Chief Executive Officer/President deceased (Apr 2026)",
+    "date": "2026-04-30"
+   }
+  ],
+  "1053986": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-16"
+   }
+  ],
+  "1054347": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-07"
+   }
+  ],
+  "1054378": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-28"
+   }
+  ],
+  "1054435": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-01"
+   }
+  ],
+  "1055003": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2025",
+    "date": "2025-06-04"
+   }
+  ],
+  "1055151": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Mar 2026",
+    "date": "2026-03-07"
+   }
+  ],
+  "1055889": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Oct 2025",
+    "date": "2025-10-17"
+   }
+  ],
+  "1056299": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Dec 2024",
+    "date": "2024-12-17"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-17"
+   }
+  ],
+  "1056740": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-23"
+   }
+  ],
+  "1056931": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Member left May 2025",
+    "date": "2025-05-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2026",
+    "date": "2026-05-05"
+   }
+  ],
+  "1057084": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2025",
+    "date": "2025-02-17"
+   }
+  ],
+  "1057693": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2025",
+    "date": "2025-07-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-12"
+   }
+  ],
+  "1058051": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2025",
+    "date": "2025-04-03"
+   }
+  ],
+  "1058177": [
+   {
+    "kind": "departure",
+    "label": "LLC Manager left Nov 2025",
+    "date": "2025-11-06"
+   }
+  ],
+  "1058249": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-04"
+   }
+  ],
+  "1058381": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jul 2025",
+    "date": "2025-07-07"
+   }
+  ],
+  "1058395": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Sep 2025",
+    "date": "2025-09-04"
+   }
+  ],
+  "1058474": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2025",
+    "date": "2025-05-12"
+   }
+  ],
+  "1060535": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-04"
+   }
+  ],
+  "1060689": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Dec 2024",
+    "date": "2024-12-30"
+   }
+  ],
+  "1060720": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-01"
+   }
+  ],
+  "1060833": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-23"
+   }
+  ],
+  "1061107": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-04"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-04"
+   }
+  ],
+  "1061186": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left Nov 2025",
+    "date": "2025-11-19"
+   }
+  ],
+  "1061226": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-10"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Officer left Mar 2025",
+    "date": "2025-03-28"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-20"
+   }
+  ],
+  "1061569": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-04"
+   }
+  ],
+  "1061625": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2025",
+    "date": "2025-09-16"
+   }
+  ],
+  "1063692": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2025",
+    "date": "2025-05-06"
+   }
+  ],
+  "1064168": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2026",
+    "date": "2026-04-09"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2025",
+    "date": "2025-09-04"
+   }
+  ],
+  "1065109": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2025",
+    "date": "2025-06-30"
+   }
+  ],
+  "1065604": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2025",
+    "date": "2025-07-01"
+   },
+   {
+    "kind": "departure",
+    "label": "LLC Manager left Oct 2025",
+    "date": "2025-10-30"
+   }
+  ],
+  "1065773": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jan 2026",
+    "date": "2026-01-29"
+   }
+  ],
+  "1066318": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-26"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-25"
+   }
+  ],
+  "1066538": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2025",
+    "date": "2025-07-29"
+   }
+  ],
+  "1066551": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-18"
+   }
+  ],
+  "1066554": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jan 2026",
+    "date": "2026-01-24"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-20"
+   }
+  ],
+  "1066880": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2025",
+    "date": "2025-07-24"
+   }
+  ],
+  "1066955": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-13"
+   }
+  ],
+  "1067307": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-02"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-09"
+   }
+  ],
+  "1067502": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2025",
+    "date": "2025-01-31"
+   }
+  ],
+  "1068174": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jan 2025",
+    "date": "2025-01-01"
+   }
+  ],
+  "1068288": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2025",
+    "date": "2025-05-15"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2025",
+    "date": "2025-06-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-24"
+   }
+  ],
+  "1069097": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-17"
+   }
+  ],
+  "1069195": [
+   {
+    "kind": "departure",
+    "label": "Officer left Apr 2025",
+    "date": "2025-04-16"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-17"
+   }
+  ],
+  "1069747": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jan 2026",
+    "date": "2026-01-21"
+   }
+  ],
+  "1069748": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-07"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-20"
+   }
+  ],
+  "1070095": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2025",
+    "date": "2025-02-07"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President/Responsible Managing Officer/Chief Executive Officer/President left Apr 2026",
+    "date": "2026-04-09"
+   }
+  ],
+  "1070326": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Apr 2026",
+    "date": "2026-04-11"
+   }
+  ],
+  "1070343": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-09"
+   }
+  ],
+  "1070457": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-20"
+   }
+  ],
+  "1070536": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2026",
+    "date": "2026-03-27"
+   }
+  ],
+  "1070641": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-11"
+   }
+  ],
+  "1071811": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Jun 2025",
+    "date": "2025-06-17"
+   }
+  ],
+  "1071997": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-30"
+   }
+  ],
+  "1072510": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-31"
+   }
+  ],
+  "1072816": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jan 2025",
+    "date": "2025-01-15"
+   }
+  ],
+  "1072939": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-05"
+   }
+  ],
+  "1073291": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Jan 2025",
+    "date": "2025-01-19"
+   }
+  ],
+  "1073436": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-09"
+   }
+  ],
+  "1073468": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-01"
+   }
+  ],
+  "1073816": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-14"
+   }
+  ],
+  "1074096": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-14"
+   }
+  ],
+  "1074641": [
+   {
+    "kind": "departure",
+    "label": "LLC Manager left Jun 2025",
+    "date": "2025-06-17"
+   }
+  ],
+  "1075333": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Mar 2025",
+    "date": "2025-03-15"
+   }
+  ],
+  "1075468": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-13"
+   }
+  ],
+  "1075566": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2024",
+    "date": "2024-10-28"
+   }
+  ],
+  "1075895": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-17"
+   }
+  ],
+  "1075952": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-26"
+   }
+  ],
+  "1076022": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-14"
+   }
+  ],
+  "1076363": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-05"
+   }
+  ],
+  "1076623": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-10"
+   }
+  ],
+  "1077112": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-14"
+   }
+  ],
+  "1077801": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-23"
+   }
+  ],
+  "1077999": [
+   {
+    "kind": "departure",
+    "label": "LLC Manager left Mar 2025",
+    "date": "2025-03-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-24"
+   }
+  ],
+  "1078193": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-01"
+   }
+  ],
+  "1078623": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-09"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2025",
+    "date": "2025-02-13"
+   }
+  ],
+  "1078816": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-11"
+   }
+  ],
+  "1079356": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-18"
+   }
+  ],
+  "1079790": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-04"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-04"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-20"
+   }
+  ],
+  "1081002": [
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2025",
+    "date": "2025-08-12"
+   }
+  ],
+  "1081552": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jun 2025",
+    "date": "2025-06-16"
+   }
+  ],
+  "1082238": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Manager left Jan 2025",
+    "date": "2025-01-27"
+   }
+  ],
+  "1083086": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2024",
+    "date": "2024-12-10"
+   }
+  ],
+  "1083187": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-09"
+   }
+  ],
+  "1083634": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-28"
+   }
+  ],
+  "1083840": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Oct 2025",
+    "date": "2025-10-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2025",
+    "date": "2025-06-01"
+   }
+  ],
+  "1083949": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-28"
+   }
+  ],
+  "1083961": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2025",
+    "date": "2025-02-04"
+   }
+  ],
+  "1084022": [
+   {
+    "kind": "departure",
+    "label": "Officer left Nov 2024",
+    "date": "2024-11-26"
+   }
+  ],
+  "1085045": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2024",
+    "date": "2024-12-31"
+   }
+  ],
+  "1085763": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-30"
+   }
+  ],
+  "1085821": [
+   {
+    "kind": "departure",
+    "label": "Officer left Apr 2026",
+    "date": "2026-04-01"
+   }
+  ],
+  "1086108": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2025",
+    "date": "2025-03-04"
+   }
+  ],
+  "1086420": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-22"
+   }
+  ],
+  "1086489": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2026",
+    "date": "2026-01-20"
+   }
+  ],
+  "1090747": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-22"
+   }
+  ],
+  "1090886": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-11"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2026",
+    "date": "2026-03-11"
+   }
+  ],
+  "1091692": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2025",
+    "date": "2025-10-25"
+   }
+  ],
+  "1091730": [
+   {
+    "kind": "departure",
+    "label": "Officer/Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-03"
+   }
+  ],
+  "1094126": [
+   {
+    "kind": "deceased",
+    "label": "Sole Owner deceased (Mar 2026)",
+    "date": "2026-03-07"
+   }
+  ],
+  "1094705": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Jul 2025",
+    "date": "2025-07-03"
+   }
+  ],
+  "1094790": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2026",
+    "date": "2026-03-09"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2025",
+    "date": "2025-09-20"
+   },
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Aug 2026",
+    "date": "2026-08-25"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-16"
+   }
+  ],
+  "1095655": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-22"
+   }
+  ],
+  "1096009": [
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2026",
+    "date": "2026-08-17"
+   }
+  ],
+  "1096792": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2026",
+    "date": "2026-10-01"
+   }
+  ],
+  "1097496": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jan 2025",
+    "date": "2025-01-28"
+   }
+  ],
+  "1098613": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2025",
+    "date": "2025-08-26"
+   }
+  ],
+  "1099384": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-28"
+   }
+  ],
+  "1099760": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Nov 2024",
+    "date": "2024-11-08"
+   }
+  ],
+  "1099959": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-30"
+   }
+  ],
+  "1100692": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-01"
+   }
+  ],
+  "1101278": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Nov 2025",
+    "date": "2025-11-17"
+   }
+  ],
+  "1101403": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-06"
+   }
+  ],
+  "1103035": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2025",
+    "date": "2025-09-05"
+   }
+  ],
+  "1103098": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Aug 2026",
+    "date": "2026-08-10"
+   }
+  ],
+  "1103351": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Aug 2025",
+    "date": "2025-08-25"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Nov 2024",
+    "date": "2024-11-07"
+   }
+  ],
+  "1103496": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-24"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-24"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-24"
+   }
+  ],
+  "1103983": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2026",
+    "date": "2026-01-13"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Oct 2024",
+    "date": "2024-10-21"
+   }
+  ],
+  "1104661": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Nov 2025",
+    "date": "2025-11-26"
+   }
+  ],
+  "1104807": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-13"
+   }
+  ],
+  "1106323": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Feb 2026",
+    "date": "2026-02-13"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2025",
+    "date": "2025-06-01"
+   }
+  ],
+  "1107117": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Mar 2026",
+    "date": "2026-03-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-28"
+   }
+  ],
+  "1107461": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Member left May 2026",
+    "date": "2026-05-26"
+   }
+  ],
+  "1107541": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-24"
+   }
+  ],
+  "1108295": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2025",
+    "date": "2025-12-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-22"
+   }
+  ],
+  "1109418": [
+   {
+    "kind": "departure",
+    "label": "LLC Manager left Aug 2025",
+    "date": "2025-08-08"
+   }
+  ],
+  "1109638": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left May 2026",
+    "date": "2026-05-15"
+   }
+  ],
+  "1109791": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2026",
+    "date": "2026-07-08"
+   }
+  ],
+  "1109970": [
+   {
+    "kind": "departure",
+    "label": "LLC Member/Responsible Managing Officer/Responsible Managing Officer/Chief Executive Officer/President left Nov 2024",
+    "date": "2024-11-19"
+   }
+  ],
+  "1110359": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2026",
+    "date": "2026-03-10"
+   }
+  ],
+  "1110659": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-18"
+   }
+  ],
+  "1111305": [
+   {
+    "kind": "departure",
+    "label": "Officer left Feb 2026",
+    "date": "2026-02-02"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2025",
+    "date": "2025-09-02"
+   }
+  ],
+  "1113785": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jan 2025",
+    "date": "2025-01-20"
+   }
+  ],
+  "1114407": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-11"
+   }
+  ],
+  "1115549": [
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-04"
+   },
+   {
+    "kind": "departure",
+    "label": "Officer left Dec 2024",
+    "date": "2024-12-04"
+   }
+  ],
+  "1116833": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Dec 2025",
+    "date": "2025-12-02"
+   }
+  ],
+  "1118308": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-03"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-12"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-02"
+   }
+  ],
+  "1118919": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-17"
+   }
+  ],
+  "1119146": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-02"
+   }
+  ],
+  "1120418": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2024",
+    "date": "2024-10-21"
+   }
+  ],
+  "1120624": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Aug 2025",
+    "date": "2025-08-07"
+   }
+  ],
+  "1120795": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Mar 2025",
+    "date": "2025-03-19"
+   }
+  ],
+  "1120948": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Aug 2026",
+    "date": "2026-08-27"
+   }
+  ],
+  "1121906": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left May 2026",
+    "date": "2026-05-20"
+   }
+  ],
+  "1123097": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2025",
+    "date": "2025-07-31"
+   }
+  ],
+  "1123200": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-09"
+   }
+  ],
+  "1124020": [
+   {
+    "kind": "departure",
+    "label": "LLC Member left Jan 2025",
+    "date": "2025-01-03"
+   }
+  ],
+  "1124036": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2025",
+    "date": "2025-09-15"
+   }
+  ],
+  "1124270": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-02"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-15"
+   }
+  ],
+  "1125538": [
+   {
+    "kind": "departure",
+    "label": "LLC Manager left May 2026",
+    "date": "2026-05-31"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Oct 2026",
+    "date": "2026-10-09"
+   }
+  ],
+  "1127003": [
+   {
+    "kind": "departure",
+    "label": "LLC Director left Jan 2025",
+    "date": "2025-01-24"
+   }
+  ],
+  "1127593": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-29"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2025",
+    "date": "2025-05-31"
+   }
+  ],
+  "1127885": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-20"
+   }
+  ],
+  "1129019": [
+   {
+    "kind": "departure",
+    "label": "LLC Member left Mar 2025",
+    "date": "2025-03-12"
+   }
+  ],
+  "1129514": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer/Chief Executive Officer/President left Feb 2026",
+    "date": "2026-02-01"
+   }
+  ],
+  "1129620": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2025",
+    "date": "2025-04-30"
+   }
+  ],
+  "1130082": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-30"
+   }
+  ],
+  "1130199": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-22"
+   }
+  ],
+  "1130231": [
+   {
+    "kind": "departure",
+    "label": "LLC Member left Feb 2025",
+    "date": "2025-02-01"
+   }
+  ],
+  "1130415": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Oct 2025",
+    "date": "2025-10-10"
+   }
+  ],
+  "1131567": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jan 2025",
+    "date": "2025-01-20"
+   }
+  ],
+  "1132042": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jul 2026",
+    "date": "2026-07-13"
+   }
+  ],
+  "1133623": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-01"
+   }
+  ],
+  "1134011": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2026",
+    "date": "2026-04-08"
+   }
+  ],
+  "1134342": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-01"
+   }
+  ],
+  "1135339": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Manager left May 2025",
+    "date": "2025-05-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Member left Jun 2026",
+    "date": "2026-06-28"
+   }
+  ],
+  "1136570": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-28"
+   }
+  ],
+  "1137256": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Dec 2025",
+    "date": "2025-12-19"
+   }
+  ],
+  "1137401": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Manager left Feb 2026",
+    "date": "2026-02-18"
+   }
+  ],
+  "1137749": [
+   {
+    "kind": "departure",
+    "label": "LLC Member left Dec 2025",
+    "date": "2025-12-04"
+   }
+  ],
+  "1138075": [
+   {
+    "kind": "departure",
+    "label": "Officer left Jul 2025",
+    "date": "2025-07-01"
+   }
+  ],
+  "1138145": [
+   {
+    "kind": "departure",
+    "label": "Officer left Oct 2025",
+    "date": "2025-10-03"
+   }
+  ],
+  "1139996": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Sep 2025",
+    "date": "2025-09-05"
+   }
+  ],
+  "1140043": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jun 2026",
+    "date": "2026-06-30"
+   }
+  ],
+  "1140704": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Manager left Mar 2026",
+    "date": "2026-03-10"
+   }
+  ],
+  "1141479": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-25"
+   }
+  ],
+  "1142193": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Jun 2026",
+    "date": "2026-06-01"
+   }
+  ],
+  "1143446": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2026",
+    "date": "2026-05-05"
+   }
+  ],
+  "1143473": [
+   {
+    "kind": "departure",
+    "label": "LLC Member left Sep 2025",
+    "date": "2025-09-25"
+   }
+  ],
+  "1143630": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Oct 2025",
+    "date": "2025-10-07"
+   }
+  ],
+  "1143635": [
+   {
+    "kind": "departure",
+    "label": "Officer left May 2026",
+    "date": "2026-05-01"
+   }
+  ],
+  "1143975": [
+   {
+    "kind": "departure",
+    "label": "Officer left Aug 2026",
+    "date": "2026-08-17"
+   }
+  ],
+  "1144196": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Nov 2025",
+    "date": "2025-11-07"
+   }
+  ],
+  "1145121": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Apr 2026",
+    "date": "2026-04-22"
+   }
+  ],
+  "1145549": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left May 2026",
+    "date": "2026-05-18"
+   }
+  ],
+  "1145987": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-15"
+   }
+  ],
+  "1146181": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Sep 2026",
+    "date": "2026-09-14"
+   }
+  ],
+  "1146424": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jan 2026",
+    "date": "2026-01-12"
+   }
+  ],
+  "1146520": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-13"
+   }
+  ],
+  "1146771": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-16"
+   }
+  ],
+  "1146811": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left May 2026",
+    "date": "2026-05-27"
+   }
+  ],
+  "1148981": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left May 2026",
+    "date": "2026-05-13"
+   }
+  ],
+  "1149171": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-27"
+   }
+  ],
+  "1149353": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Feb 2026",
+    "date": "2026-02-06"
+   }
+  ],
+  "1150572": [
+   {
+    "kind": "departure",
+    "label": "Chief Executive Officer/President left Aug 2026",
+    "date": "2026-08-18"
+   },
+   {
+    "kind": "departure",
+    "label": "LLC Director left Aug 2026",
+    "date": "2026-08-18"
+   }
+  ],
+  "1151477": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Apr 2026",
+    "date": "2026-04-23"
+   }
+  ],
+  "1151808": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Mar 2026",
+    "date": "2026-03-11"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-30"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Jun 2026",
+    "date": "2026-06-30"
+   }
+  ],
+  "1152312": [
+   {
+    "kind": "departure",
+    "label": "Officer left Mar 2026",
+    "date": "2026-03-30"
+   }
+  ],
+  "1155579": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-16"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-16"
+   },
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Employee left Jul 2026",
+    "date": "2026-07-16"
+   }
+  ],
+  "1157961": [
+   {
+    "kind": "departure",
+    "label": "Responsible Managing Officer left Aug 2026",
+    "date": "2026-08-15"
+   }
+  ]
+ }
+}

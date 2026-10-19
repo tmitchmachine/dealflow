@@ -12,7 +12,11 @@
     "test:watch": "vitest",
     "test:data": "node scripts/verify-data.mjs",
     "test:opportunities": "npx --yes tsx scripts/smoke-opportunities.mjs",
-    "refresh:markets": "node scripts/refresh-markets.mjs"
+    "refresh:markets": "node scripts/refresh-markets.mjs",
+    "sync:brokers": "tsx src/sources/brokers/cli.ts",
+    "sync:taxdefault": "tsx src/sources/taxdefault/cli.ts",
+    "enrich": "tsx src/enrich/cli.ts",
+    "snapshot": "tsx src/snapshots/cli.ts"
   },
   "dependencies": {
     "csv-parse": "^7.0.3",

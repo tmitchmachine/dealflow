@@ -12,8 +12,7 @@ export type ListingSource =
   | "redfin"
   | "realtor"
   | "mls"
-  | "rentcast"
-  | "mock";
+  | "rentcast";
 
 export type PropertyType =
   | "single-family"

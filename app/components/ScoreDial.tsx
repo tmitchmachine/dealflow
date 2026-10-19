@@ -19,7 +19,7 @@ export function ScoreDial({
   return (
     <div className="relative inline-flex items-center justify-center" style={{ width: size, height: size }}>
       <svg width={size} height={size} className="-rotate-90">
-        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="currentColor" strokeWidth={stroke} className="text-zinc-200 dark:text-zinc-800" />
+        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="currentColor" strokeWidth={stroke} className="text-line" />
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -29,13 +29,12 @@ export function ScoreDial({
           strokeLinecap="round"
           strokeDasharray={c}
           strokeDashoffset={offset}
-          className={colors.bar.replace("bg-", "text-")}
-          stroke="currentColor"
+          className={colors.stroke}
         />
       </svg>
       <div className="absolute flex flex-col items-center leading-none">
         <span className={`text-lg font-bold ${colors.text}`}>{score}</span>
-        <span className="text-[10px] font-semibold text-zinc-500">{grade}</span>
+        <span className="text-[10px] font-semibold text-muted">{grade}</span>
       </div>
     </div>
   );

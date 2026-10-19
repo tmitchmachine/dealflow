@@ -58,13 +58,13 @@ export function Dashboard({ scored }: { scored: ScoredListing[] }) {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-wrap items-center gap-3 rounded-xl border border-zinc-200 bg-white p-3 text-sm dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="flex flex-wrap items-center gap-3 rounded-xl border border-line bg-surface p-3 text-sm">
         <label className="flex items-center gap-2">
-          <span className="text-zinc-500">Sort</span>
+          <span className="text-muted">Sort</span>
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as SortKey)}
-            className="rounded-md border border-zinc-300 bg-transparent px-2 py-1 dark:border-zinc-700"
+            className="rounded-md border border-line-strong bg-transparent px-2 py-1"
           >
             {SORTS.map((s) => (
               <option key={s.key} value={s.key}>{s.label}</option>
@@ -73,11 +73,11 @@ export function Dashboard({ scored }: { scored: ScoredListing[] }) {
         </label>
 
         <label className="flex items-center gap-2">
-          <span className="text-zinc-500">Type</span>
+          <span className="text-muted">Type</span>
           <select
             value={type}
             onChange={(e) => setType(e.target.value)}
-            className="rounded-md border border-zinc-300 bg-transparent px-2 py-1 capitalize dark:border-zinc-700"
+            className="rounded-md border border-line-strong bg-transparent px-2 py-1 capitalize"
           >
             <option value="all">All</option>
             {types.map((t) => (
@@ -87,11 +87,11 @@ export function Dashboard({ scored }: { scored: ScoredListing[] }) {
         </label>
 
         <label className="flex items-center gap-2">
-          <span className="text-zinc-500">Market</span>
+          <span className="text-muted">Market</span>
           <select
             value={metro}
             onChange={(e) => setMetro(e.target.value)}
-            className="rounded-md border border-zinc-300 bg-transparent px-2 py-1 dark:border-zinc-700"
+            className="rounded-md border border-line-strong bg-transparent px-2 py-1"
           >
             <option value="all">All</option>
             {metros.map((m) => (
@@ -101,7 +101,7 @@ export function Dashboard({ scored }: { scored: ScoredListing[] }) {
         </label>
 
         <label className="flex items-center gap-2">
-          <span className="text-zinc-500">Min score {minScore}</span>
+          <span className="text-muted">Min score {minScore}</span>
           <input
             type="range"
             min={0}
@@ -118,7 +118,7 @@ export function Dashboard({ scored }: { scored: ScoredListing[] }) {
             checked={positiveCashFlow}
             onChange={(e) => setPositiveCashFlow(e.target.checked)}
           />
-          <span className="text-zinc-500">Positive cash flow</span>
+          <span className="text-muted">Positive cash flow</span>
         </label>
 
         <label className="flex items-center gap-2">
@@ -127,14 +127,14 @@ export function Dashboard({ scored }: { scored: ScoredListing[] }) {
             checked={hideHighRisk}
             onChange={(e) => setHideHighRisk(e.target.checked)}
           />
-          <span className="text-zinc-500">Hide high-risk</span>
+          <span className="text-muted">Hide high-risk</span>
         </label>
 
-        <span className="ml-auto text-zinc-400">{visible.length} of {scored.length} properties</span>
+        <span className="ml-auto text-subtle">{visible.length} of {scored.length} properties</span>
       </div>
 
       {visible.length === 0 ? (
-        <div className="rounded-xl border border-dashed border-zinc-300 p-10 text-center text-zinc-500 dark:border-zinc-700">
+        <div className="rounded-xl border border-dashed border-line-strong p-10 text-center text-muted">
           No properties match these filters.
         </div>
       ) : (

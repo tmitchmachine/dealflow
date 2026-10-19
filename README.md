@@ -13,15 +13,25 @@ opinion of value and only promoting deals that clear hard gates.
   and HVAC contractors (CSLB) from public license files — off-market deal
   sourcing by published tenure factors. Accounting is the selling index; HVAC
   is comparison only.
-- **Opportunity desk.** One ranked view across real estate and license indexes,
-  actionable-first.
+- **Practices for sale.** Accounting practices listed by brokers (Accounting
+  Practice Sales, Poe Group Advisors), priced against those brokers' own sold
+  listings.
+- **Tax-default parcels.** Delinquent-tax properties from county open-data
+  feeds — owners under pressure to sell before the county does.
+- **Firm enrichment and license changes.** Websites, contact emails, Google
+  open/closed status, succession language, and owner/officer exits layered onto
+  the license indexes.
+- **Opportunity desk.** One ranked view across all of it, actionable-first.
 
 Property listing adapters started from
 [ReturnState Property](https://github.com/tmitchmachine/returnstateproperty).
 
 ## Opportunity scanner
 
-Next.js 16 app. Demo catalogs work offline; live MLS property data is opt-in.
+Next.js 16 app. Real data only: license indexes come from the public files in
+`data/raw/`, and property listings come from RentCast when live data is on. With
+no live feed the desk shows zero properties and says why. It never shows sample
+records.
 
 ```bash
 cp .env.example .env.local   # add RENTCAST_API_KEY + RENTCAST_LIVE=1 for live listings
@@ -32,7 +42,7 @@ npm run refresh:markets      # pull the latest Redfin metro snapshot (~4s)
 npm run test:data            # verify the live adapters
 ```
 
-Live listings are **opt-in**: a key alone serves the mock catalog. Set
+Live listings are **opt-in**: a key alone serves no listings. Set
 `RENTCAST_LIVE=1` only when you want to spend quota — the free tier is ~50
 requests/month and one scan costs five (one per metro).
 
@@ -65,7 +75,7 @@ MarketStats ($/sqft, YoY) ───┘
 | `app/lib/sources/rentcast.ts` | RentCast sale-listings + ZIP rent adapter. |
 | `app/lib/valuation.ts` | The AVM — value/rent/rehab/ARV with a confidence range. |
 | `app/lib/scoring.ts` | Criteria scoring, deal analysis, risk flags. |
-| `app/lib/data.ts` | `getListings()` seam (RentCast live, else mock). |
+| `app/lib/data.ts` | `getListings()` seam (RentCast live, else none + reason). |
 | `scripts/refresh-markets.mjs` | Rewrites the committed Redfin snapshot. |
 
 ### Property scoring (weights)
@@ -97,12 +107,14 @@ company to market (and what to fix first).
 | Per-listing facts (price, beds, sqft, DOM, MLS type) | [RentCast](https://www.rentcast.io/api) `/listings/sale` | `RENTCAST_API_KEY` **and** `RENTCAST_LIVE=1` in `.env.local` |
 | Rent $/sqft (optional enrichment) | RentCast `/markets` by ZIP | Same key; set `RENTCAST_ENRICH_RENT=1` to enable |
 
-Without `RENTCAST_LIVE=1`, the app serves the curated mock listing catalog so
-local demos still work. Market stats still load from Redfin (live or snapshot).
+Without `RENTCAST_LIVE=1`, the app serves no property listings and the desk's
+data-sources panel says why. Market stats still load from Redfin (live or snapshot).
 
 ### California license indexes (accounting + HVAC)
 
-The desk loads Orange County top-200 lists for each index via `app/lib/niches/load.ts`:
+The desk loads up to 1,500 firms per index for the county picked in its filter bar
+(Orange by default, or statewide / any of the nine largest counties) via
+`app/lib/niches/load.ts`, and renders them 60 cards at a time:
 
 1. **Preferred:** live state files in `data/raw/` (gitignored).
 2. **Fallback:** previously written `out/<cpa|hvac>-*.csv` exports from `npm run list`.
@@ -145,6 +157,35 @@ render** — a request is served from the committed snapshot (or the in-process
 rows once warm) and the refresh runs via `after()` once the response is flushed.
 Run `npm run refresh:markets` weekly to keep the snapshot, and therefore the
 first page view after a restart, current.
+
+### Web sources
+
+Each web source is a CLI that writes a file the desk reads, so the app never
+crawls on a page view. All HTTP goes through `src/web/fetch.ts` (ported from
+Heavenya's crawler): an identified user agent, robots.txt honored, ~1.5s
+between requests per host, and 429/503 backoff. Sites that block bots
+(BizBuySell) or disallow crawling (HUD Home Store) are not used.
+
+```bash
+npm run sync:brokers      # broker listings → data/sources/practice-listings.json
+npm run sync:taxdefault   # county feeds    → data/sources/tax-default.json (~15s)
+npm run enrich -- --niche accounting --counties Orange --limit 100
+npm run snapshot          # after each fresh data/raw download
+```
+
+| Source | Where it comes from | Notes |
+| --- | --- | --- |
+| Practices for sale | APS and Poe sitemaps → listing pages | Incremental: a page is refetched only when its sitemap `lastmod` changes, and each run fetches at most `--max-fetch` pages (default 300), so the first ~900-page sync spans a few runs. Sold California APS listings since 2025 (plus Poe's sold pages) are the price comps. |
+| Tax-default parcels | Socrata APIs: Sonoma County CA, Norfolk VA, Clermont County OH | No key. Rows roll up per parcel; parcels owing under $500 are dropped. Add a county in `src/sources/taxdefault/counties.ts`. |
+| Firm websites | Google Places API (New) Text Search, else verified domain guesses | Set `GOOGLE_MAPS_API_KEY` (and `PLACES_MONTHLY_CAP`, default 500/month). Without a key, guessed domains must show the firm's name *and* its city or license number; that finds ~7% of firms. The run prints a yield report. |
+| License changes | Snapshots of the state files in `data/snapshots/` | Diffs start with the second download. HVAC owner/officer exits in the last 24 months come from CSLB's personnel dates right away. |
+
+Scores for the new sources publish their factors like the license indexes
+(`src/sources/brokers/score.ts`, `src/sources/taxdefault/aggregate.ts`). A firm
+Google lists as permanently closed is marked pass. `data/sources/` and
+`data/snapshots/` are small and safe to commit; `data/cache/` (page caches,
+API spend counters) is gitignored. Tax-default files include owner names and
+mailing addresses from public county records.
 
 > Note: Zillow/Redfin have no open public *listing* API and their ToS prohibit
 > direct scraping. Use Redfin's *published* market data (free) plus a licensed

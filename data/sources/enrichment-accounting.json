@@ -1,0 +1,1143 @@
+{
+ "updatedAt": "2026-10-19T03:25:46.626Z",
+ "firms": {
+  "290": {
+   "licenseNumber": "290",
+   "name": "John B. Leslie & Co.",
+   "checkedAt": "2026-10-19T03:23:00.931Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "428": {
+   "licenseNumber": "428",
+   "name": "Farukhi & Company",
+   "checkedAt": "2026-10-19T03:23:24.111Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "530": {
+   "licenseNumber": "530",
+   "name": "Cangelosi & Holmes Inc Cpas",
+   "checkedAt": "2026-10-19T03:21:08.128Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "565": {
+   "licenseNumber": "565",
+   "name": "Daniel Dubois Cpa And Company",
+   "checkedAt": "2026-10-19T03:23:01.488Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "617": {
+   "licenseNumber": "617",
+   "name": "Simpson & Company",
+   "checkedAt": "2026-10-19T03:23:02.523Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "628": {
+   "licenseNumber": "628",
+   "name": "Amy Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:21:07.478Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "773": {
+   "licenseNumber": "773",
+   "name": "Demarchi & Co",
+   "checkedAt": "2026-10-19T03:23:05.537Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "994": {
+   "licenseNumber": "994",
+   "name": "Heimler & Associates, Cpa",
+   "checkedAt": "2026-10-19T03:23:25.408Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "1403": {
+   "licenseNumber": "1403",
+   "name": "C J Malley Accountancy Corp",
+   "checkedAt": "2026-10-19T03:22:28.308Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "1534": {
+   "licenseNumber": "1534",
+   "name": "Rouleau Bruce Acc Corp",
+   "checkedAt": "2026-10-19T03:21:08.232Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "1896": {
+   "licenseNumber": "1896",
+   "name": "Curtis R Eakin Cpa A Prof Corp",
+   "checkedAt": "2026-10-19T03:21:08.771Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "2140": {
+   "licenseNumber": "2140",
+   "name": "Michael J. Conkey & Associates, Cpa",
+   "checkedAt": "2026-10-19T03:25:17.450Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "2152": {
+   "licenseNumber": "2152",
+   "name": "Kathleen C Harney Acc Corp",
+   "checkedAt": "2026-10-19T03:21:08.282Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "2364": {
+   "licenseNumber": "2364",
+   "name": "Rusell B Goodwin Cpa, An Acc Corp",
+   "checkedAt": "2026-10-19T03:21:09.046Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "2373": {
+   "licenseNumber": "2373",
+   "name": "Peter D. Finch An Acc Corp",
+   "checkedAt": "2026-10-19T03:21:13.842Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "2659": {
+   "licenseNumber": "2659",
+   "name": "Peasley Aldinger & Obymachow An Accty Corp",
+   "checkedAt": "2026-10-19T03:21:09.091Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "3043": {
+   "licenseNumber": "3043",
+   "name": "Alex A. Accetta, Cpa & Associates, Inc.",
+   "checkedAt": "2026-10-19T03:21:11.005Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "3355": {
+   "licenseNumber": "3355",
+   "name": "Richard E Jackson An Accty Corp",
+   "checkedAt": "2026-10-19T03:21:15.060Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "3438": {
+   "licenseNumber": "3438",
+   "name": "Takenaga Hashizu Jay & Co",
+   "checkedAt": "2026-10-19T03:21:07.416Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "3491": {
+   "licenseNumber": "3491",
+   "name": "Mc Cullough & Bryan",
+   "checkedAt": "2026-10-19T03:22:28.485Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "3775": {
+   "licenseNumber": "3775",
+   "name": "Richard Mandelsohn, Cpa, An Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:21:14.682Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "3974": {
+   "licenseNumber": "3974",
+   "name": "Joseph R Stack Cpa Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:21:18.300Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4158": {
+   "licenseNumber": "4158",
+   "name": "Favor Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:21:15.439Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4217": {
+   "licenseNumber": "4217",
+   "name": "Kaylor, Jeffrey L., Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:21:15.490Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4524": {
+   "licenseNumber": "4524",
+   "name": "Hennig Accty Corp",
+   "checkedAt": "2026-10-19T03:25:46.624Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4530": {
+   "licenseNumber": "4530",
+   "name": "Harrell & Assoc An Accty Corp",
+   "checkedAt": "2026-10-19T03:21:36.178Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4573": {
+   "licenseNumber": "4573",
+   "name": "Su Lin Cpa Inc",
+   "checkedAt": "2026-10-19T03:22:18.486Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4664": {
+   "licenseNumber": "4664",
+   "name": "Carlos Gonzalez An Acctncy Corp",
+   "checkedAt": "2026-10-19T03:21:57.422Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4665": {
+   "licenseNumber": "4665",
+   "name": "Kartchner & Associates An Acctncy Corp",
+   "checkedAt": "2026-10-19T03:21:58.368Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4696": {
+   "licenseNumber": "4696",
+   "name": "Leibenson, Ivan Acct Corp",
+   "checkedAt": "2026-10-19T03:21:59.336Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4731": {
+   "licenseNumber": "4731",
+   "name": "Redwitz, Inc.",
+   "checkedAt": "2026-10-19T03:22:05.364Z",
+   "method": "guess",
+   "place": null,
+   "website": "https://redwitz.com/",
+   "site": {
+    "url": "https://redwitz.com/",
+    "title": "Redwitz | Accounting, Tax and Financial Consulting",
+    "emails": [],
+    "successionSignals": [],
+    "services": [
+     "tax",
+     "payroll",
+     "audit",
+     "advisory",
+     "CFO",
+     "estate & trust"
+    ],
+    "copyrightYear": 2025,
+    "foundingYear": null,
+    "employees": null,
+    "parked": false,
+    "pagesRead": 3
+   },
+   "hash": "e5c4dea6fb7a16d6"
+  },
+  "4755": {
+   "licenseNumber": "4755",
+   "name": "Whitmore Tatala Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:22:06.029Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4772": {
+   "licenseNumber": "4772",
+   "name": "Moshenko & Associates, Inc.",
+   "checkedAt": "2026-10-19T03:22:06.424Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4863": {
+   "licenseNumber": "4863",
+   "name": "Ping Yang Cpa A Prof Corp",
+   "checkedAt": "2026-10-19T03:22:50.205Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4962": {
+   "licenseNumber": "4962",
+   "name": "Irene Mack Cpa, A Prof'l Corp",
+   "checkedAt": "2026-10-19T03:22:21.970Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4966": {
+   "licenseNumber": "4966",
+   "name": "Richard E Crellin, Cpa Inc.",
+   "checkedAt": "2026-10-19T03:22:22.230Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "4972": {
+   "licenseNumber": "4972",
+   "name": "John J Simonelli, Cpa, Inc.",
+   "checkedAt": "2026-10-19T03:22:23.113Z",
+   "method": "guess",
+   "place": null,
+   "website": "https://www.simonellicpa.com/",
+   "site": {
+    "url": "https://www.simonellicpa.com/",
+    "title": "John J Simonelli, CPA, Inc. - Trusted Tax & Accounting, Done Right",
+    "emails": [
+     "office@simonellicpa.com"
+    ],
+    "successionSignals": [],
+    "services": [
+     "tax",
+     "bookkeeping",
+     "audit",
+     "advisory",
+     "estate & trust"
+    ],
+    "copyrightYear": 2026,
+    "foundingYear": null,
+    "employees": null,
+    "parked": false,
+    "pagesRead": 1
+   },
+   "hash": "a520cde159c1b72a"
+  },
+  "4995": {
+   "licenseNumber": "4995",
+   "name": "Kevin Hsu Cpa, A Professional Accountancy Corp",
+   "checkedAt": "2026-10-19T03:24:50.668Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5023": {
+   "licenseNumber": "5023",
+   "name": "Duran Michael W., Cpa, A Professional Corporation",
+   "checkedAt": "2026-10-19T03:22:29.006Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5032": {
+   "licenseNumber": "5032",
+   "name": "Sophia M.C. Yang & Company, Cpa, A Prof Accty Corp",
+   "checkedAt": "2026-10-19T03:23:00.085Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5094": {
+   "licenseNumber": "5094",
+   "name": "Thomas & Thomas",
+   "checkedAt": "2026-10-19T03:21:12.160Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5095": {
+   "licenseNumber": "5095",
+   "name": "Chris B. Mizar, An Acct Corp",
+   "checkedAt": "2026-10-19T03:22:29.387Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5137": {
+   "licenseNumber": "5137",
+   "name": "Joseph Lim, An Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:22:53.004Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5157": {
+   "licenseNumber": "5157",
+   "name": "Goodrich, Thomas, Cannon & Reeds, Llp",
+   "checkedAt": "2026-10-19T03:21:13.898Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5173": {
+   "licenseNumber": "5173",
+   "name": "Templeman, Michael S. Inc",
+   "checkedAt": "2026-10-19T03:22:54.803Z",
+   "method": "guess",
+   "place": null,
+   "website": "https://www.templemancpa.com/",
+   "site": {
+    "url": "https://www.templemancpa.com/",
+    "title": "Templeman CPA",
+    "emails": [
+     "info@templemancpa.com"
+    ],
+    "successionSignals": [
+     "mentions retirement"
+    ],
+    "services": [
+     "tax",
+     "payroll",
+     "audit",
+     "advisory",
+     "estate & trust"
+    ],
+    "copyrightYear": null,
+    "foundingYear": null,
+    "employees": null,
+    "parked": false,
+    "pagesRead": 3
+   },
+   "hash": "e4beab8d46a3729a"
+  },
+  "5221": {
+   "licenseNumber": "5221",
+   "name": "Kung-Jang Connie Yu, Cpa, Inc.",
+   "checkedAt": "2026-10-19T03:22:53.080Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5262": {
+   "licenseNumber": "5262",
+   "name": "Zaher Fallahi, An Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:22:53.139Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5280": {
+   "licenseNumber": "5280",
+   "name": "Chan Accountancy Corp., Certified Public Accountant",
+   "checkedAt": "2026-10-19T03:22:53.648Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5300": {
+   "licenseNumber": "5300",
+   "name": "Christopher E. Vossman, Cpa, Apc",
+   "checkedAt": "2026-10-19T03:22:54.563Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5306": {
+   "licenseNumber": "5306",
+   "name": "Bryars & Associates, Inc.",
+   "checkedAt": "2026-10-19T03:22:55.007Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5308": {
+   "licenseNumber": "5308",
+   "name": "Butler & Butler, A Professional Corporation",
+   "checkedAt": "2026-10-19T03:23:16.408Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5364": {
+   "licenseNumber": "5364",
+   "name": "Duglas Wright & Company, Inc., Certified Public Accountants",
+   "checkedAt": "2026-10-19T03:23:24.736Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5444": {
+   "licenseNumber": "5444",
+   "name": "Joseph S. Ro. Cpa, Inc.",
+   "checkedAt": "2026-10-19T03:23:06.912Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5491": {
+   "licenseNumber": "5491",
+   "name": "Folkers & Associates, An Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:23:12.960Z",
+   "method": "guess",
+   "place": null,
+   "website": "https://www.folkerscpa.com/",
+   "site": {
+    "url": "https://www.folkerscpa.com/",
+    "title": "CPA Accounting | Irvine | Costa Mesa | Call Folkers",
+    "emails": [
+     "info@folkerscpa.com"
+    ],
+    "successionSignals": [],
+    "services": [
+     "tax",
+     "bookkeeping",
+     "payroll",
+     "advisory",
+     "CFO",
+     "estate & trust",
+     "QuickBooks"
+    ],
+    "copyrightYear": 2026,
+    "foundingYear": null,
+    "employees": null,
+    "parked": false,
+    "pagesRead": 3
+   },
+   "hash": "be6e2ac6e7387c4b"
+  },
+  "5588": {
+   "licenseNumber": "5588",
+   "name": "Barnett & Company, Inc. Certified Public Accountants",
+   "checkedAt": "2026-10-19T03:25:22.054Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5591": {
+   "licenseNumber": "5591",
+   "name": "Neal A. Weyer, Cpa, Inc.",
+   "checkedAt": "2026-10-19T03:25:23.354Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5592": {
+   "licenseNumber": "5592",
+   "name": "Carol S. Holmquist, Cpa Apc",
+   "checkedAt": "2026-10-19T03:23:13.351Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5664": {
+   "licenseNumber": "5664",
+   "name": "Stacy S. Schlinger Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:23:13.955Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5737": {
+   "licenseNumber": "5737",
+   "name": "Todhunter & Associates, Inc",
+   "checkedAt": "2026-10-19T03:23:55.499Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5767": {
+   "licenseNumber": "5767",
+   "name": "Stumpf & Associates, A Professional Corporation",
+   "checkedAt": "2026-10-19T03:24:57.073Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "5784": {
+   "licenseNumber": "5784",
+   "name": "Farris & Company An Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:23:36.380Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6049": {
+   "licenseNumber": "6049",
+   "name": "Stephens Reidinger & Beller Llp",
+   "checkedAt": "2026-10-19T03:21:15.537Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6210": {
+   "licenseNumber": "6210",
+   "name": "Bentson, Vuona & Westersten, Llp",
+   "checkedAt": "2026-10-19T03:21:56.497Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6311": {
+   "licenseNumber": "6311",
+   "name": "Friedman & Co Cpas",
+   "checkedAt": "2026-10-19T03:21:57.200Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6432": {
+   "licenseNumber": "6432",
+   "name": "R. Kuhen & Co., Inc",
+   "checkedAt": "2026-10-19T03:23:25.576Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6509": {
+   "licenseNumber": "6509",
+   "name": "Zabaneh & Company Cpas, Inc.",
+   "checkedAt": "2026-10-19T03:24:06.516Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6526": {
+   "licenseNumber": "6526",
+   "name": "Izumi & Co. Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:23:36.401Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6543": {
+   "licenseNumber": "6543",
+   "name": "Diane C. Savoian, C.P.A., Apc",
+   "checkedAt": "2026-10-19T03:23:36.854Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6610": {
+   "licenseNumber": "6610",
+   "name": "Patty Wang Cpa, A Professional Corporation",
+   "checkedAt": "2026-10-19T03:23:59.003Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6750": {
+   "licenseNumber": "6750",
+   "name": "John R. Pascoe Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:23:59.879Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6768": {
+   "licenseNumber": "6768",
+   "name": "Matthew M. Rasouli, Llp Certified Public Accountant",
+   "checkedAt": "2026-10-19T03:22:21.321Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6857": {
+   "licenseNumber": "6857",
+   "name": "Farukhi & Company, Llp",
+   "checkedAt": "2026-10-19T03:23:04.151Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6865": {
+   "licenseNumber": "6865",
+   "name": "Chisholm & Kline, Cpa's",
+   "checkedAt": "2026-10-19T03:22:28.998Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6882": {
+   "licenseNumber": "6882",
+   "name": "Tina E. Carlson, Cpa, An Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:24:06.075Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6924": {
+   "licenseNumber": "6924",
+   "name": "Daniel Dubois Cpa & Company, Inc.",
+   "checkedAt": "2026-10-19T03:24:00.020Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6928": {
+   "licenseNumber": "6928",
+   "name": "Todd Hammett Cpa & Associates, Inc",
+   "checkedAt": "2026-10-19T03:24:01.327Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6935": {
+   "licenseNumber": "6935",
+   "name": "Kenneth A. Carroll, Cpa, Professional Corporation",
+   "checkedAt": "2026-10-19T03:24:23.727Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "6974": {
+   "licenseNumber": "6974",
+   "name": "Bartolme And Associates, Inc. A Professional Corporation",
+   "checkedAt": "2026-10-19T03:24:28.879Z",
+   "method": "guess",
+   "place": null,
+   "website": "https://bartolmecpa.com/",
+   "site": {
+    "url": "https://bartolmecpa.com/",
+    "title": "Tax And Accounting - Bartolme and Associates Inc PC - CPA",
+    "emails": [
+     "info@bartolmecpa.com"
+    ],
+    "successionSignals": [],
+    "services": [
+     "tax",
+     "estate & trust"
+    ],
+    "copyrightYear": 2026,
+    "foundingYear": null,
+    "employees": null,
+    "parked": false,
+    "pagesRead": 3
+   },
+   "hash": "5acfee5ae50a0b91"
+  },
+  "6989": {
+   "licenseNumber": "6989",
+   "name": "Boggeln & Company, Inc.",
+   "checkedAt": "2026-10-19T03:24:23.754Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7021": {
+   "licenseNumber": "7021",
+   "name": "Crandall & Company, Cpa, A Professional Corporation",
+   "checkedAt": "2026-10-19T03:24:26.840Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7036": {
+   "licenseNumber": "7036",
+   "name": "Tejas Mehta, Cpa, Inc.",
+   "checkedAt": "2026-10-19T03:24:31.394Z",
+   "method": "guess",
+   "place": null,
+   "website": "https://www.cpa4biz.com/",
+   "site": {
+    "url": "https://www.cpa4biz.com/",
+    "title": "Tejas Mehta, CPA, Inc.",
+    "emails": [
+     "tejasmehta@aol.com"
+    ],
+    "successionSignals": [],
+    "services": [
+     "tax",
+     "bookkeeping",
+     "payroll",
+     "audit",
+     "QuickBooks"
+    ],
+    "copyrightYear": null,
+    "foundingYear": null,
+    "employees": null,
+    "parked": false,
+    "pagesRead": 3
+   },
+   "hash": "ba6cefadfb84f6d4"
+  },
+  "7161": {
+   "licenseNumber": "7161",
+   "name": "Stack & Jagiello, Llp",
+   "checkedAt": "2026-10-19T03:23:25.553Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7292": {
+   "licenseNumber": "7292",
+   "name": "Janet Lee Krochman, A Professional Corporation",
+   "checkedAt": "2026-10-19T03:24:29.710Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7456": {
+   "licenseNumber": "7456",
+   "name": "Steven R. Blake, Cpa Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:24:34.001Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7500": {
+   "licenseNumber": "7500",
+   "name": "Richard E. Crouch, Cpa, A Professional Corporation",
+   "checkedAt": "2026-10-19T03:24:37.750Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7524": {
+   "licenseNumber": "7524",
+   "name": "Bradley J Smith Cpa Apc",
+   "checkedAt": "2026-10-19T03:25:16.905Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7556": {
+   "licenseNumber": "7556",
+   "name": "Patrice Mills, Cpa, P.C.",
+   "checkedAt": "2026-10-19T03:24:38.139Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7606": {
+   "licenseNumber": "7606",
+   "name": "Howard, Kittle And Company Cpas, Llp",
+   "checkedAt": "2026-10-19T03:24:35.491Z",
+   "method": "guess",
+   "place": null,
+   "website": "https://www.howardkittlecpas.com/",
+   "site": {
+    "url": "https://www.howardkittlecpas.com/",
+    "title": "Howard, Kittle & Company CPAs",
+    "emails": [
+     "gary@glhowardcpa.com",
+     "samantha@glhowardcpa.com",
+     "nika@glhowardcpa.com",
+     "sarah@glhowardcpa.com",
+     "cristina@glhowardcpa.com"
+    ],
+    "successionSignals": [
+     "mentions retirement"
+    ],
+    "services": [
+     "tax",
+     "audit",
+     "advisory",
+     "estate & trust"
+    ],
+    "copyrightYear": null,
+    "foundingYear": null,
+    "employees": null,
+    "parked": false,
+    "pagesRead": 3
+   },
+   "hash": "9cc87695e60c0445"
+  },
+  "7653": {
+   "licenseNumber": "7653",
+   "name": "Erin S. Fukuto, Cpa, Inc.",
+   "checkedAt": "2026-10-19T03:24:50.734Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7667": {
+   "licenseNumber": "7667",
+   "name": "Michelle Mcduffie Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:24:50.986Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7670": {
+   "licenseNumber": "7670",
+   "name": "Henry Mendoza Accountancy Corp.",
+   "checkedAt": "2026-10-19T03:24:54.859Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7691": {
+   "licenseNumber": "7691",
+   "name": "Shusko Associates, Llp",
+   "checkedAt": "2026-10-19T03:24:48.828Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7853": {
+   "licenseNumber": "7853",
+   "name": "Penny M. Fox, Cpa, A Professional Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:25:05.426Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7856": {
+   "licenseNumber": "7856",
+   "name": "Jack Kenefick Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:25:00.678Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7891": {
+   "licenseNumber": "7891",
+   "name": "Gail L Williams, Cpa A Professional Corporation",
+   "checkedAt": "2026-10-19T03:25:02.506Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "7950": {
+   "licenseNumber": "7950",
+   "name": "Holmquist Liewald Llp",
+   "checkedAt": "2026-10-19T03:25:43.763Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "8142": {
+   "licenseNumber": "8142",
+   "name": "Robert E Williams An Accountancy Corporation",
+   "checkedAt": "2026-10-19T03:25:07.603Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "8301": {
+   "licenseNumber": "8301",
+   "name": "Gerald P Castillo Cpa A Professional Corporation",
+   "checkedAt": "2026-10-19T03:25:30.304Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "8571": {
+   "licenseNumber": "8571",
+   "name": "Tipping & Company",
+   "checkedAt": "2026-10-19T03:25:18.684Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  },
+  "8606": {
+   "licenseNumber": "8606",
+   "name": "Mathieu & Co Cpas, Apc",
+   "checkedAt": "2026-10-19T03:25:19.272Z",
+   "method": "none",
+   "place": null,
+   "website": null,
+   "site": null,
+   "hash": "7ea94c7d46ccba4c"
+  }
+ }
+}

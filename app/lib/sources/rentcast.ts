@@ -13,8 +13,12 @@ import { METRO_CONFIGS, type MetroConfig } from "../metros";
 
 const RENTCAST_BASE = "https://api.rentcast.io/v1";
 
-/** How many active sale listings to pull per metro (keeps free-tier usage low). */
-const LISTINGS_PER_METRO = 6;
+/**
+ * Active sale listings per metro. RentCast bills per request, not per row, and
+ * one /listings/sale page holds up to 500 — so 50 (its own default) still costs
+ * one request per metro while giving far more deals than a token handful.
+ */
+const LISTINGS_PER_METRO = 50;
 
 interface RentCastSaleListing {
   id: string;

@@ -1,9 +1,13 @@
+import { statSync } from "node:fs";
 import path from "node:path";
 import { listFromCache } from "@/core/out-cache";
 import type { Card, ListQuery, NicheInfo } from "@/core/niche";
 import { getNiche } from "@/niches/index";
+import { enrichmentFile, readEnrichment, type EnrichmentFile } from "@/src/enrich/store";
+import { readSignals, signalsFile, type SignalsFile } from "@/src/snapshots/signals";
 import type { Verdict } from "../opportunity";
-import type { NicheBook, NicheFirmCardData } from "./types";
+import type { LeadCardData } from "../desk/types";
+import type { NicheBook } from "./types";
 
 const DATA_DIR = path.resolve(process.cwd(), "data/raw");
 const OUT_DIR = path.resolve(process.cwd(), "out");
@@ -58,16 +62,16 @@ function verdictFor(
 }
 
 /** Desk payload: skip factor bars (reasons already explain the score). */
-function toFirm(niche: NicheInfo, card: Card): NicheFirmCardData {
+function toFirm(niche: NicheInfo, card: Card): LeadCardData {
   const nicheId = niche.id as "accounting" | "hvac";
   const { verdict, verdictReason, isActionable } = verdictFor(
     niche.stage,
     card.score,
   );
   return {
-    nicheId,
-    nicheLabel: niche.label,
-    stage: niche.stage,
+    source: nicheId,
+    id: card.licenseNumber,
+    sourceLabel: niche.label,
     rank: card.rank,
     score: card.score,
     investability: card.score,
@@ -76,13 +80,116 @@ function toFirm(niche: NicheInfo, card: Card): NicheFirmCardData {
     verdictReason,
     name: card.name,
     subtitle: card.subtitle,
-    licenseNumber: card.licenseNumber,
+    idText: `License #${card.licenseNumber} · rank ${card.rank}`,
+    scoreLabel: "License-tenure score",
     reasons: card.reasons,
     factors: [],
     facts: card.facts,
-    verifyUrl: card.verifyUrl,
+    badges:
+      niche.stage === "comparison"
+        ? [{ label: "Comparison", tone: "neutral" }]
+        : [{ label: "Selling index", tone: "good" }],
+    link: { href: card.verifyUrl, label: `Verify license #${card.licenseNumber}` },
     imageColor: IMAGE_COLORS[nicheId],
   };
+}
+
+/** Re-read a source file only when it changes on disk. */
+function byMtime<T>(file: string, read: () => T): () => T {
+  let seen = -1;
+  let value: T;
+  return () => {
+    let mtime = 0;
+    try {
+      mtime = statSync(file).mtimeMs;
+    } catch {
+      // Missing file reads as empty; the reader supplies its own fallback.
+    }
+    if (mtime !== seen) {
+      seen = mtime;
+      value = read();
+    }
+    return value;
+  };
+}
+
+const overlays = {
+  accounting: {
+    enrichment: byMtime(enrichmentFile("accounting"), () => readEnrichment("accounting")),
+    signals: byMtime(signalsFile("accounting"), () => readSignals("accounting")),
+  },
+  hvac: {
+    enrichment: byMtime(enrichmentFile("hvac"), () => readEnrichment("hvac")),
+    signals: byMtime(signalsFile("hvac"), () => readSignals("hvac")),
+  },
+};
+
+const thisYear = () => new Date().getFullYear();
+
+/**
+ * Add what the web and the license diffs know about a firm: its website,
+ * Google status, contact email, succession language, and license changes.
+ * A firm Google lists as permanently closed is not a deal.
+ */
+function overlayFirm(
+  firm: LeadCardData,
+  enrichment: EnrichmentFile,
+  signals: SignalsFile | null,
+): LeadCardData {
+  const e = enrichment.firms[firm.id];
+  const changes = signals?.firms[firm.id] ?? [];
+  if (!e && changes.length === 0) return firm;
+
+  const facts = [...firm.facts];
+  const badges = [...firm.badges];
+  let { verdict, verdictReason, isActionable } = firm;
+
+  if (e?.website) facts.push({ label: "Website", value: e.website.replace(/^https?:\/\//, "").replace(/\/$/, "") });
+  if (e?.site?.emails.length) facts.push({ label: "Email", value: e.site.emails.slice(0, 2).join(", ") });
+  if (e?.place) {
+    const p = e.place;
+    facts.push({
+      label: "Google",
+      value: [
+        p.businessStatus === "OPERATIONAL" ? "Open" : p.businessStatus.replace(/_/g, " ").toLowerCase(),
+        p.rating ? `${p.rating}★ (${p.reviews} reviews)` : `${p.reviews} reviews`,
+      ].join(" · "),
+    });
+    if (p.businessStatus === "CLOSED_PERMANENTLY") {
+      badges.push({ label: "Closed on Google", tone: "bad" });
+      verdict = "pass";
+      verdictReason = "Google lists this business as permanently closed.";
+      isActionable = false;
+    }
+  }
+  if (e?.site?.services.length) facts.push({ label: "Services", value: e.site.services.join(", ") });
+  if (e?.site?.successionSignals.length) {
+    badges.push({ label: "Succession signal", tone: "good" });
+    facts.push({ label: "Site says", value: e.site.successionSignals.join("; ") });
+  }
+  if (e?.site?.copyrightYear && e.site.copyrightYear < thisYear() - 3) {
+    badges.push({ label: `Site stale (©${e.site.copyrightYear})`, tone: "warn" });
+  }
+  if (e?.site?.parked) badges.push({ label: "Domain parked", tone: "bad" });
+
+  for (const c of changes) {
+    facts.push({ label: c.kind === "status" || c.kind === "gone" ? "License change" : "Owner change", value: `${c.label} (${c.date})` });
+  }
+  if (changes.some((c) => c.kind === "departure" || c.kind === "deceased" || c.kind === "principal-left")) {
+    badges.push({ label: "Owner change", tone: "good" });
+  }
+  if (changes.some((c) => c.kind === "status" || c.kind === "gone")) {
+    badges.push({ label: "License changed", tone: "warn" });
+  }
+
+  return { ...firm, facts, badges, verdict, verdictReason, isActionable };
+}
+
+function withOverlays(book: NicheBook): NicheBook {
+  const o = overlays[book.nicheId];
+  const enrichment = o.enrichment();
+  const signals = o.signals();
+  return { ...book, firms: book.firms.map((f) => overlayFirm(f, enrichment, signals)) };
 }
 
 const DEFAULT_QUERY: Omit<ListQuery, "asOf"> = {
@@ -130,7 +237,7 @@ export function loadNicheBook(
   };
   const key = queryKey(nicheId, fullQuery);
   const hit = bookByKey.get(key);
-  if (hit) return hit;
+  if (hit) return withOverlays(hit);
 
   let book: NicheBook;
   try {
@@ -174,7 +281,7 @@ export function loadNicheBook(
   }
 
   bookByKey.set(key, book);
-  return book;
+  return withOverlays(book);
 }
 
 export function loadNicheBooks(

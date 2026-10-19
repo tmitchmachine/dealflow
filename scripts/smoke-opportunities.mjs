@@ -4,13 +4,14 @@
 import { getListings } from "../app/lib/data.ts";
 import { getMarkets } from "../app/lib/markets.ts";
 import { scanListings } from "../app/lib/scoring.ts";
-import { getBusinesses } from "../app/lib/business/data.ts";
-import { scanBusinesses } from "../app/lib/business/scoring.ts";
 
 const listings = await getListings();
 const { markets } = await getMarkets();
 const props = scanListings(listings, markets);
-const biz = scanBusinesses(getBusinesses());
+
+if (props.length === 0) {
+  console.log("No live listings — set RENTCAST_API_KEY and RENTCAST_LIVE=1.");
+}
 
 console.log("=== TOP PROPERTIES ===");
 for (const p of props.slice(0, 6)) {
@@ -26,16 +27,3 @@ for (const p of props.slice(0, 6)) {
 }
 console.log("actionable props", props.filter((p) => p.isActionable).length);
 
-console.log("\n=== TOP BUSINESSES ===");
-for (const b of biz.slice(0, 6)) {
-  console.log(
-    b.investability,
-    b.verdict.padEnd(9),
-    b.deal.strategy.padEnd(16),
-    "sell",
-    String(b.deal.sellReadiness).padStart(3),
-    b.isActionable ? "ACTION" : "     ",
-    b.listing.name,
-  );
-}
-console.log("actionable biz", biz.filter((b) => b.isActionable).length);

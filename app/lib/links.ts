@@ -1,7 +1,7 @@
 // Outbound links from a listing back to the source website.
 //
 // A real adapter sets `Listing.url` to the actual listing page, and that is what
-// we link to. Mock/demo listings have no such page, so rather than inventing a
+// we link to. Feeds like RentCast return no such page, so rather than inventing a
 // deep link that looks real and 404s, we fall back to an address *search* on
 // Zillow and label it as a search — the link never claims to be something it
 // isn't. Callers can branch on `isDirect` to word the affordance honestly.
@@ -14,7 +14,6 @@ const SOURCE_LABEL: Record<ListingSource, string> = {
   realtor: "Realtor.com",
   mls: "MLS",
   rentcast: "RentCast",
-  mock: "Zillow",
 };
 
 export interface ListingLink {

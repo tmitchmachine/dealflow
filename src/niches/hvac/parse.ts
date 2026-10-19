@@ -31,6 +31,8 @@ export interface CslbPrincipal {
   since: Date | null;
   /** Still associated: at least one title has no disassociation date. */
   current: boolean;
+  /** Latest disassociation date when no longer associated. */
+  leftOn: Date | null;
   deceased: boolean;
 }
 
@@ -149,13 +151,19 @@ export function parsePersonnelText(
     const starts = splitPipes(r["ASSN-DT"]).map(parseUsDate);
     const ends = splitPipes(r["DIS-ASSN-DT"]);
     const dated = starts.filter((d): d is Date => d !== null);
+    const current = starts.some((start, i) => start !== null && !ends[i]);
+    const endDates = ends.map(parseUsDate).filter((d): d is Date => d !== null);
     return {
       licenseNumber: r["LIC-NO"].trim(),
       titles,
       since: dated.length
         ? new Date(Math.min(...dated.map((d) => d.getTime())))
         : null,
-      current: starts.some((start, i) => start !== null && !ends[i]),
+      current,
+      leftOn:
+        !current && endDates.length
+          ? new Date(Math.max(...endDates.map((d) => d.getTime())))
+          : null,
       deceased: titles.includes("Deceased"),
     };
   });
@@ -165,6 +173,8 @@ export interface CslbData {
   licenses: CslbLicense[];
   /** Current, living principals, keyed by license number. */
   principalsByLicense: Map<string, CslbPrincipal[]>;
+  /** Principals who left the license or died, keyed by license number. */
+  departuresByLicense: Map<string, CslbPrincipal[]>;
 }
 
 export function readCslbFiles(
@@ -174,14 +184,16 @@ export function readCslbFiles(
   const licenses = parseMasterText(readFileSync(masterPath, "latin1"));
   const numbers = new Set(licenses.map((l) => l.licenseNumber));
   const principalsByLicense = new Map<string, CslbPrincipal[]>();
+  const departuresByLicense = new Map<string, CslbPrincipal[]>();
   for (const p of parsePersonnelText(
     readFileSync(personnelPath, "latin1"),
     numbers,
   )) {
-    if (!p.current || p.deceased) continue;
-    const list = principalsByLicense.get(p.licenseNumber) ?? [];
+    const target =
+      p.current && !p.deceased ? principalsByLicense : departuresByLicense;
+    const list = target.get(p.licenseNumber) ?? [];
     list.push(p);
-    principalsByLicense.set(p.licenseNumber, list);
+    target.set(p.licenseNumber, list);
   }
-  return { licenses, principalsByLicense };
+  return { licenses, principalsByLicense, departuresByLicense };
 }

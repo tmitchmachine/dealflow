@@ -29,7 +29,7 @@ export function PropertyCard({ scored }: { scored: ScoredListing }) {
   // The whole card navigates to the detail page via a stretched overlay link,
   // which leaves the source link free to be a real <a> (anchors can't nest).
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-md hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700">
+    <article className="group relative flex flex-col overflow-hidden rounded-xl border border-line bg-surface shadow-sm transition hover:shadow-md hover:border-line-strong">
       <Link
         href={`/property/${listing.id}`}
         className="absolute inset-0 z-10"
@@ -84,23 +84,23 @@ export function PropertyCard({ scored }: { scored: ScoredListing }) {
       <div className="flex flex-1 flex-col gap-3 p-4">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <div className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">{usd(listing.listPrice)}</div>
-            <div className="text-sm text-zinc-500">{listing.address}</div>
-            <div className="mt-0.5 text-xs text-zinc-400">
+            <div className="text-lg font-semibold text-fg">{usd(listing.listPrice)}</div>
+            <div className="text-sm text-muted">{listing.address}</div>
+            <div className="mt-0.5 text-xs text-subtle">
               Our value {usd(valuation.value)} · investability {investability}
             </div>
           </div>
           <ScoreDial score={overallScore} grade={grade} size={56} />
         </div>
 
-        <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-zinc-500">
+        <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted">
           <span>{listing.beds} bd</span>
           <span>{listing.baths} ba</span>
           <span>{listing.sqft.toLocaleString()} sqft</span>
           <span className="capitalize">{listing.condition}</span>
         </div>
 
-        <div className="mt-auto grid grid-cols-3 gap-2 border-t border-zinc-100 pt-3 text-center dark:border-zinc-800">
+        <div className="mt-auto grid grid-cols-3 gap-2 border-t border-line pt-3 text-center">
           <Stat label="DSCR" value={financials.dscr.toFixed(2)} good={financials.dscr >= 1.2} />
           <Stat label="cash flow" value={signedUsd(cf)} good={cf >= 0} />
           <Stat label="5yr/yr" value={pct(deal.projectedAnnualizedReturn)} good={deal.projectedAnnualizedReturn >= 0.1} />
@@ -122,8 +122,8 @@ export function PropertyCard({ scored }: { scored: ScoredListing }) {
 function Stat({ label, value, good }: { label: string; value: string; good: boolean }) {
   return (
     <div>
-      <div className={`text-sm font-semibold ${good ? "text-emerald-600" : "text-zinc-500"}`}>{value}</div>
-      <div className="text-[10px] uppercase tracking-wide text-zinc-400">{label}</div>
+      <div className={`text-sm font-semibold ${good ? "text-positive" : "text-muted"}`}>{value}</div>
+      <div className="text-[10px] uppercase tracking-wide text-subtle">{label}</div>
     </div>
   );
 }
@@ -135,7 +135,7 @@ function MiniBars({ criteria }: { criteria: ScoredListing["criteria"] }) {
         const colors = scoreColor(c.score);
         return (
           <div key={c.key} className="flex-1" title={`${c.label}: ${Math.round(c.score)}`}>
-            <div className="h-1.5 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
+            <div className="h-1.5 overflow-hidden rounded-full bg-surface-2">
               <div className={`h-full ${colors.bar}`} style={{ width: `${c.score}%` }} />
             </div>
           </div>

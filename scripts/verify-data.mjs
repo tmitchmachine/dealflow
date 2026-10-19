@@ -4,7 +4,7 @@
  *
  * 1) Streams Redfin Data Center metro tracker and asserts our five metros.
  * 2) Boots assertions against a running Next server (optional — pass --http).
- * 3) Confirms mock listing fallback when RENTCAST_API_KEY is unset.
+ * 3) Confirms there is no demo listing catalog (real listings only).
  *
  * Usage:
  *   node scripts/verify-data.mjs
@@ -14,7 +14,7 @@
 import { createGunzip } from "zlib";
 import { createInterface } from "readline";
 import { Readable } from "stream";
-import { readFileSync } from "fs";
+import { existsSync, readFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
@@ -142,17 +142,13 @@ function verifySnapshot() {
   }
 }
 
-function verifyMockCatalog() {
-  console.log("\n[3] Mock listing catalog (fallback without API key)");
+function verifyNoMockCatalog() {
+  console.log("\n[3] Real listings only (no demo catalog)");
   const src = readFileSync(join(ROOT, "app/lib/data.ts"), "utf8");
-  assert(src.includes("MOCK_LISTINGS"), "MOCK_LISTINGS still present");
+  assert(!src.includes("MOCK_LISTINGS"), "MOCK_LISTINGS removed");
+  assert(!src.includes('source: "mock"'), "no mock-tagged listings");
   assert(src.includes("hasRentCastKey"), "RentCast key gate present");
   assert(src.includes("rentcastLiveEnabled"), "RentCast opt-in gate present");
-  assert(src.includes('source: "mock"'), "mock listings source tagged");
-  assert(
-    process.env.RENTCAST_LIVE !== "1",
-    "RENTCAST_LIVE is not 1 → mock path expected (a key alone spends no quota)",
-  );
 }
 
 function verifyRentCastAdapterShape() {
@@ -173,7 +169,7 @@ async function verifyHttp(baseUrl) {
   const html = await res.text();
 
   assert(
-    html.includes("Redfin Data Center") || html.includes("demo listings"),
+    html.includes("Redfin Data Center"),
     "home page mentions data source",
   );
   assert(
@@ -185,16 +181,48 @@ async function verifyHttp(baseUrl) {
     "page payload reflects Redfin-derived market stats or live/snapshot label",
   );
   assert(
-    html.includes("RENTCAST_API_KEY") || html.includes("live RentCast") || html.includes("demo listings"),
+    html.includes("RENTCAST") || html.includes("live RentCast"),
     "listing source status visible",
   );
 
-  // Property detail from mock catalog should resolve.
-  const detail = await fetch(`${baseUrl}/property/cle-1842-clark`);
-  assert(detail.ok, `GET /property/cle-1842-clark → HTTP ${detail.status}`);
-  const detailHtml = await detail.text();
-  assert(detailHtml.includes("1842 Clark") || detailHtml.includes("Clark Ave"), "detail page shows address");
-  assert(detailHtml.includes("Our value opinion") || detailHtml.includes("Independent value"), "detail page shows valuation");
+  // Old demo ids must not resolve now that only real listings are served.
+  const demo = await fetch(`${baseUrl}/property/cle-1842-clark`);
+  assert(demo.status === 404, `GET /property/cle-1842-clark → HTTP ${demo.status} (demo id gone)`);
+}
+
+/** Synced web sources, when present: shape checks that catch a broker template change or a county schema change. */
+function verifyWebSources() {
+  console.log("\n[6] Synced web sources (data/sources/)");
+  const read = (name) => {
+    const file = join(ROOT, "data/sources", name);
+    return existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : null;
+  };
+
+  const brokers = read("practice-listings.json");
+  if (!brokers) console.log("  – practice-listings.json not synced (npm run sync:brokers)");
+  else {
+    const forSale = brokers.listings.filter((l) => l.status !== "sold");
+    assert(forSale.length > 0, `${forSale.length} practices for sale`);
+    const priced = forSale.filter((l) => l.revenue && l.askingPrice).length;
+    assert(priced / forSale.length > 0.8, `${priced}/${forSale.length} listings parsed revenue + asking price`);
+    assert(brokers.listings.some((l) => l.status === "sold"), "sold comps present");
+  }
+
+  const tax = read("tax-default.json");
+  if (!tax) console.log("  – tax-default.json not synced (npm run sync:taxdefault)");
+  else {
+    for (const [id, c] of Object.entries(tax.counties)) {
+      assert(!c.error && c.parcels > 0, `${id}: ${c.parcels} parcels${c.error ? ` (${c.error})` : ""}`);
+    }
+    assert(tax.parcels.every((p) => p.amountDue >= 500 && p.parcel), "every parcel has an id and owes $500+");
+  }
+
+  for (const niche of ["accounting", "hvac"]) {
+    const e = read(`enrichment-${niche}.json`);
+    if (!e) continue;
+    const firms = Object.values(e.firms);
+    assert(firms.every((f) => f.licenseNumber && f.checkedAt), `enrichment-${niche}: ${firms.length} firms well-formed`);
+  }
 }
 
 async function main() {
@@ -207,8 +235,9 @@ async function main() {
 
   await verifyRedfinStream();
   verifySnapshot();
-  verifyMockCatalog();
+  verifyNoMockCatalog();
   verifyRentCastAdapterShape();
+  verifyWebSources();
   if (httpBase) {
     await verifyHttp(httpBase.replace(/\/$/, ""));
   } else {

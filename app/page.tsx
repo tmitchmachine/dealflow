@@ -1,61 +1,46 @@
 import { getListingsWithMeta } from "./lib/data";
 import { getMarkets } from "./lib/markets";
 import { scanListings } from "./lib/scoring";
-import { NicheBooksLoader } from "./components/NicheBooksLoader";
+import { DeskLoader } from "./components/DeskLoader";
 
 /** Weekly refresh: one regeneration spends 5 RentCast calls (one per
  * metro), and the free tier is ~50/month. See README > Live data sources. */
 export const revalidate = 604800;
 
 export default async function Home() {
-  const [{ listings, source }, { markets, redfinLive, periodBegin, rentcastRent }] =
+  const [{ listings, source, note }, { markets, redfinLive, periodBegin, rentcastRent }] =
     await Promise.all([getListingsWithMeta(), getMarkets()]);
 
   const properties = scanListings(listings, markets);
-  const actionableProps = properties.filter((s) => s.isActionable).length;
-  const pursueProps = properties.filter((s) => s.verdict === "pursue").length;
 
-  const listingLabel =
-    source === "rentcast"
-      ? "live RentCast / MLS listings"
-      : "demo property listings (set RENTCAST_LIVE=1 for live data)";
-  const marketLabel = redfinLive
-    ? `live Redfin Data Center (${periodBegin})`
-    : `Redfin Data Center snapshot (${periodBegin})`;
+  const marketLabel = `${redfinLive ? "Live Redfin Data Center" : "Redfin Data Center snapshot"} (${periodBegin})${
+    rentcastRent ? " · rent $/sqft via RentCast" : ""
+  }`;
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
       <header className="mb-6">
-        <div className="flex items-center gap-2 text-sm font-medium text-emerald-600">
-          <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
-          Dealflow — opportunity desk
+        <div className="flex items-center gap-2 text-sm font-medium text-accent">
+          <span className="inline-block h-2 w-2 rounded-full bg-accent" />
+          Dealflow
         </div>
-        <h1 className="mt-1 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-          {properties.length} properties · California license indexes load below ·{" "}
-          {actionableProps} RE actionable
-        </h1>
-        <p className="mt-1 text-zinc-500">
-          Real estate plus accounting and HVAC license indexes in one book, ranked best →
-          worst on investability. HVAC is comparison only. {pursueProps} properties marked
-          pursue.
-        </p>
-        <p className="mt-2 text-xs text-zinc-400">
-          Data: {listingLabel} · market $/sqft from {marketLabel}
-          {rentcastRent ? " · rent $/sqft enriched via RentCast" : ""} · niches via{" "}
-          <code>/api/niches</code> (Orange County top 200).
+        <h1 className="mt-1 text-2xl font-bold tracking-tight text-fg">Opportunity desk</h1>
+        <p className="mt-1 max-w-3xl text-muted">
+          Accounting practices for sale, tax-defaulted parcels, live real estate listings, and
+          California accounting and HVAC license indexes in one book — actionable deals
+          first, then best → worst. Real data only: a source that isn&apos;t connected shows
+          as off, never as sample records.
         </p>
       </header>
 
-      <NicheBooksLoader properties={properties} />
+      <DeskLoader
+        properties={properties}
+        propertySource={{ live: source === "rentcast", note }}
+        market={{ live: redfinLive, label: marketLabel }}
+      />
 
-      <footer className="mt-10 space-y-2 text-xs text-zinc-400">
+      <footer className="mt-10 space-y-2 text-xs text-subtle">
         <p>Scores and verdicts are estimates from heuristic models — not investment advice.</p>
-        {source === "mock" && (
-          <p>
-            Property records are demo data until <code>RENTCAST_API_KEY</code> and{" "}
-            <code>RENTCAST_LIVE=1</code> are set in <code>.env.local</code>.
-          </p>
-        )}
       </footer>
     </main>
   );

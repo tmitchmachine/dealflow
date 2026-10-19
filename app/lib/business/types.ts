@@ -5,7 +5,7 @@
 // Fair value and investability are computed by Dealflow — never taken from
 // the broker's marketing multiple.
 
-export type BusinessSource = "bizbuysell" | "axial" | "broker" | "owner" | "mock";
+export type BusinessSource = "bizbuysell" | "axial" | "broker" | "owner";
 
 export type BusinessIndustry =
   | "hvac-plumbing"

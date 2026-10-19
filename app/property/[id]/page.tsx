@@ -41,10 +41,10 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
 
   return (
     <main className="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6">
-      <Link href="/" className="text-sm text-emerald-600 hover:underline">← Back to desk</Link>
+      <Link href="/" className="text-sm text-accent hover:underline">← Back to desk</Link>
 
       {/* Hero */}
-      <div className="mt-4 overflow-hidden rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="mt-4 overflow-hidden rounded-2xl border border-line bg-surface">
         <div className="relative h-56" style={{ backgroundColor: listing.imageColor }}>
           {listing.photos?.[0] && (
             // Photos come from the source feed's CDN — a plain <img> avoids
@@ -74,7 +74,7 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
         </div>
 
         {listing.photos && listing.photos.length > 1 && (
-          <div className="flex gap-2 overflow-x-auto border-b border-zinc-100 p-3 dark:border-zinc-800">
+          <div className="flex gap-2 overflow-x-auto border-b border-line p-3">
             {listing.photos.slice(1, 7).map((p, i) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -101,14 +101,14 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
         </div>
       </div>
 
-      <section className="mt-6 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+      <section className="mt-6 rounded-2xl border border-line bg-surface p-5">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Verdict</h2>
+          <h2 className="text-lg font-semibold text-fg">Verdict</h2>
           <VerdictBadge verdict={verdict} />
         </div>
-        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{verdictReason}</p>
-        <div className="mt-3 flex flex-wrap gap-3 text-xs text-zinc-500">
-          <span>Strategy: <strong className="text-zinc-700 dark:text-zinc-200">{deal.strategy.replace("-", " ")}</strong></span>
+        <p className="mt-2 text-sm text-muted">{verdictReason}</p>
+        <div className="mt-3 flex flex-wrap gap-3 text-xs text-muted">
+          <span>Strategy: <strong className="text-muted">{deal.strategy.replace("-", " ")}</strong></span>
           <span>Hold fit {deal.holdFit}</span>
           <span>Flip fit {deal.flipFit}</span>
           <span>DSCR {fin.dscr.toFixed(2)}</span>
@@ -116,10 +116,10 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
       </section>
 
       {/* Our value opinion */}
-      <section className="mt-6 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+      <section className="mt-6 rounded-2xl border border-line bg-surface p-5">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Our value opinion</h2>
-          <span className="text-xs text-zinc-400">{Math.round(val.confidence * 100)}% confidence</span>
+          <h2 className="text-lg font-semibold text-fg">Our value opinion</h2>
+          <span className="text-xs text-subtle">{Math.round(val.confidence * 100)}% confidence</span>
         </div>
         <div className="mt-3 grid gap-4 sm:grid-cols-3">
           <BigStat label="Independent value" value={usd(val.value)} sub={`range ${usd(val.low)}–${usd(val.high)}`} />
@@ -137,12 +137,12 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
         </div>
         {/* Value vs list vs offer scale */}
         <ValueBar listPrice={listing.listPrice} value={val.value} maxOffer={deal.maxOffer} low={val.low} high={val.high} />
-        <p className="mt-3 text-sm text-zinc-500">{val.basis}</p>
+        <p className="mt-3 text-sm text-muted">{val.basis}</p>
       </section>
 
       {/* What to do */}
       <section className="mt-6">
-        <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">What to do</h2>
+        <h2 className="mb-3 text-lg font-semibold text-fg">What to do</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           <Action
             title="Buy & hold"
@@ -176,13 +176,13 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
       {/* Risks */}
       {risks.length > 0 && (
         <section className="mt-6">
-          <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">Risk flags</h2>
+          <h2 className="mb-3 text-lg font-semibold text-fg">Risk flags</h2>
           <div className="flex flex-col gap-2">
             {risks.map((r) => (
-              <div key={r.label} className="flex items-center gap-3 rounded-lg border border-zinc-200 bg-white p-3 text-sm dark:border-zinc-800 dark:bg-zinc-900">
+              <div key={r.label} className="flex items-center gap-3 rounded-lg border border-line bg-surface p-3 text-sm">
                 <RiskDot level={r.level} />
-                <span className="text-zinc-700 dark:text-zinc-200">{r.label}</span>
-                <span className="ml-auto text-xs uppercase tracking-wide text-zinc-400">{r.level}</span>
+                <span className="text-muted">{r.label}</span>
+                <span className="ml-auto text-xs uppercase tracking-wide text-subtle">{r.level}</span>
               </div>
             ))}
           </div>
@@ -191,23 +191,23 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
 
       {/* Score breakdown */}
       <section className="mt-6">
-        <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">Why it scored {overallScore}</h2>
+        <h2 className="mb-3 text-lg font-semibold text-fg">Why it scored {overallScore}</h2>
         <div className="flex flex-col gap-3">
           {Object.values(criteria).map((c) => {
             const colors = scoreColor(c.score);
             return (
-              <div key={c.key} className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
+              <div key={c.key} className="rounded-xl border border-line bg-surface p-4">
                 <div className="flex items-center justify-between gap-3">
-                  <div className="font-medium text-zinc-800 dark:text-zinc-100">{c.label}</div>
+                  <div className="font-medium text-fg">{c.label}</div>
                   <div className="flex items-center gap-2 text-sm">
                     <span className={`font-semibold ${colors.text}`}>{Math.round(c.score)}</span>
-                    <span className="text-zinc-400">· weight {pct(c.weight, 0)}</span>
+                    <span className="text-subtle">· weight {pct(c.weight, 0)}</span>
                   </div>
                 </div>
-                <div className="mt-2 h-2 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
+                <div className="mt-2 h-2 overflow-hidden rounded-full bg-surface-2">
                   <div className={`h-full ${colors.bar}`} style={{ width: `${c.score}%` }} />
                 </div>
-                <p className="mt-2 text-sm text-zinc-500">{c.reason}</p>
+                <p className="mt-2 text-sm text-muted">{c.reason}</p>
               </div>
             );
           })}
@@ -216,8 +216,8 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
 
       {/* Financials */}
       <section className="mt-6">
-        <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">Investment math</h2>
-        <div className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900 sm:grid-cols-2">
+        <h2 className="mb-3 text-lg font-semibold text-fg">Investment math</h2>
+        <div className="grid gap-3 rounded-xl border border-line bg-surface p-5 sm:grid-cols-2">
           <Money label="Est. market rent / mo" value={usd(val.rentMonthly)} />
           <Money label="Rent / price" value={pct(fin.rentToPrice, 2)} good={fin.rentToPrice >= 0.008} />
           <Money label="Gross yield" value={pct(fin.grossYield)} />
@@ -230,7 +230,7 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
           <Money label="Cash to close (est.)" value={usd(fin.cashInvested)} />
           <Money label="NOI / yr" value={usd(fin.noiAnnual)} />
         </div>
-        <p className="mt-2 text-xs text-zinc-400">
+        <p className="mt-2 text-xs text-subtle">
           Assumes 20% down, 7% / 30-yr financing, 5% vacancy, 8% management, 1% annual
           maintenance, plus {market.metro}&apos;s {pct(market.propertyTaxRate)} tax and{" "}
           {pct(market.insuranceRate)} insurance rates and the listing&apos;s HOA.
@@ -240,16 +240,16 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
       {/* Price history */}
       {listing.priceHistory.length > 1 && (
         <section className="mt-6">
-          <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">Price history</h2>
-          <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
+          <h2 className="mb-3 text-lg font-semibold text-fg">Price history</h2>
+          <div className="rounded-xl border border-line bg-surface p-4">
             {listing.priceHistory.map((h, i) => {
               const prev = listing.priceHistory[i - 1];
               const delta = prev ? h.price - prev.price : 0;
               return (
-                <div key={h.date} className="flex items-center justify-between border-b border-zinc-100 py-2 text-sm last:border-0 dark:border-zinc-800">
-                  <span className="text-zinc-500">{h.date}</span>
+                <div key={h.date} className="flex items-center justify-between border-b border-line py-2 text-sm last:border-0">
+                  <span className="text-muted">{h.date}</span>
                   <span className="font-medium">{usd(h.price)}</span>
-                  <span className={delta < 0 ? "text-emerald-600" : delta > 0 ? "text-red-500" : "text-zinc-400"}>
+                  <span className={delta < 0 ? "text-positive" : delta > 0 ? "text-negative" : "text-subtle"}>
                     {delta === 0 ? "listed" : signedUsd(delta)}
                   </span>
                 </div>
@@ -259,7 +259,7 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
         </section>
       )}
 
-      <footer className="mt-8 text-xs text-zinc-400">
+      <footer className="mt-8 text-xs text-subtle">
         Estimates from a heuristic model — not investment advice.
         {!source.isDirect && (
           <>
@@ -276,19 +276,19 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
 function Spec({ label, value }: { label: string; value: string | number }) {
   return (
     <div>
-      <div className="font-semibold capitalize text-zinc-900 dark:text-zinc-50">{value}</div>
-      <div className="text-xs uppercase tracking-wide text-zinc-400">{label}</div>
+      <div className="font-semibold capitalize text-fg">{value}</div>
+      <div className="text-xs uppercase tracking-wide text-subtle">{label}</div>
     </div>
   );
 }
 
 function BigStat({ label, value, sub, tone = "neutral" }: { label: string; value: string; sub: string; tone?: "good" | "bad" | "neutral" }) {
-  const color = tone === "good" ? "text-emerald-600" : tone === "bad" ? "text-orange-500" : "text-zinc-900 dark:text-zinc-50";
+  const color = tone === "good" ? "text-positive" : tone === "bad" ? "text-negative" : "text-fg";
   return (
-    <div className="rounded-xl bg-zinc-50 p-3 dark:bg-zinc-800/50">
-      <div className="text-xs uppercase tracking-wide text-zinc-400">{label}</div>
+    <div className="rounded-xl bg-surface-2 p-3">
+      <div className="text-xs uppercase tracking-wide text-subtle">{label}</div>
       <div className={`mt-1 text-xl font-bold ${color}`}>{value}</div>
-      <div className="text-xs text-zinc-400">{sub}</div>
+      <div className="text-xs text-subtle">{sub}</div>
     </div>
   );
 }
@@ -299,13 +299,13 @@ function ValueBar({ listPrice, value, maxOffer, low, high }: { listPrice: number
   const at = (n: number) => `${((n - min) / (max - min)) * 100}%`;
   return (
     <div className="mt-4">
-      <div className="relative h-2 rounded-full bg-zinc-100 dark:bg-zinc-800">
+      <div className="relative h-2 rounded-full bg-surface-2">
         {/* value band */}
         <div className="absolute h-2 rounded-full bg-emerald-200 dark:bg-emerald-900/60" style={{ left: at(low), right: `calc(100% - ${at(high)})` }} />
         {/* markers */}
-        <Marker pos={at(value)} color="bg-emerald-600" label="value" />
+        <Marker pos={at(value)} color="bg-positive" label="value" />
         <Marker pos={at(maxOffer)} color="bg-amber-500" label="max offer" />
-        <Marker pos={at(listPrice)} color="bg-zinc-900 dark:bg-white" label="list" />
+        <Marker pos={at(listPrice)} color="bg-fg" label="list" />
       </div>
       <div className="mt-6" />
     </div>
@@ -316,19 +316,19 @@ function Marker({ pos, color, label }: { pos: string; color: string; label: stri
   return (
     <div className="absolute -top-1 flex -translate-x-1/2 flex-col items-center" style={{ left: pos }}>
       <div className={`h-4 w-1 rounded-full ${color}`} />
-      <span className="mt-0.5 whitespace-nowrap text-[10px] text-zinc-500">{label}</span>
+      <span className="mt-0.5 whitespace-nowrap text-[10px] text-muted">{label}</span>
     </div>
   );
 }
 
 function Action({ title, headline, good, lines }: { title: string; headline: string; good: boolean; lines: string[] }) {
   return (
-    <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
+    <div className="rounded-xl border border-line bg-surface p-4">
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-zinc-800 dark:text-zinc-100">{title}</h3>
-        <span className={`text-sm font-bold ${good ? "text-emerald-600" : "text-orange-500"}`}>{headline}</span>
+        <h3 className="font-semibold text-fg">{title}</h3>
+        <span className={`text-sm font-bold ${good ? "text-positive" : "text-negative"}`}>{headline}</span>
       </div>
-      <ul className="mt-2 space-y-1 text-sm text-zinc-500">
+      <ul className="mt-2 space-y-1 text-sm text-muted">
         {lines.map((l, i) => (
           <li key={i}>{l}</li>
         ))}
@@ -344,9 +344,9 @@ function RiskDot({ level }: { level: RiskLevel }) {
 
 function Money({ label, value, good }: { label: string; value: string; good?: boolean }) {
   return (
-    <div className="flex items-center justify-between border-b border-zinc-100 pb-2 dark:border-zinc-800">
-      <span className="text-sm text-zinc-500">{label}</span>
-      <span className={`text-sm font-semibold ${good === undefined ? "text-zinc-800 dark:text-zinc-100" : good ? "text-emerald-600" : "text-orange-500"}`}>
+    <div className="flex items-center justify-between border-b border-line pb-2">
+      <span className="text-sm text-muted">{label}</span>
+      <span className={`text-sm font-semibold ${good === undefined ? "text-fg" : good ? "text-positive" : "text-negative"}`}>
         {value}
       </span>
     </div>
