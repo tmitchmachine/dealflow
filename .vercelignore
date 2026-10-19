@@ -1,0 +1,17 @@
+# Secrets belong in Vercel's encrypted env vars, never in the uploaded source.
+# Without this, `vercel deploy` ships the local .env into the build.
+.env
+.env.*
+!.env.example
+
+.next
+node_modules
+
+# Block service-account keys and local env from Vercel uploads
+*-firebase-adminsdk-*.json
+*firebase-adminsdk*.json
+*serviceAccount*.json
+*service-account*.json
+*.p12
+*.key
+*.p8

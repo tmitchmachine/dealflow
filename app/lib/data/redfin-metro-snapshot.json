@@ -1,0 +1,52 @@
+{
+  "fetchedAt": "2026-08-24T16:20:00.000Z",
+  "source": "https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/redfin_metro_market_tracker.tsv000.gz",
+  "periodBegin": "2026-05-01",
+  "metros": {
+    "cleveland-oh": {
+      "region": "Cleveland, OH metro area",
+      "medianPpsf": 167.536988686,
+      "ppsfYoY": 0.03032584332,
+      "medianDaysOnMarket": 21,
+      "homesSold": 2211,
+      "medianSalePrice": 251000.0,
+      "periodBegin": "2026-05-01"
+    },
+    "indianapolis-in": {
+      "region": "Indianapolis, IN metro area",
+      "medianPpsf": 161.131059246,
+      "ppsfYoY": 0.02741662022,
+      "medianDaysOnMarket": 19,
+      "homesSold": 3236,
+      "medianSalePrice": 325000.0,
+      "periodBegin": "2026-05-01"
+    },
+    "memphis-tn": {
+      "region": "Memphis, TN metro area",
+      "medianPpsf": 154.24382716,
+      "ppsfYoY": -0.02936324338,
+      "medianDaysOnMarket": 37,
+      "homesSold": 1264,
+      "medianSalePrice": 314245.0,
+      "periodBegin": "2026-05-01"
+    },
+    "tampa-fl": {
+      "region": "Tampa, FL metro area",
+      "medianPpsf": 227.510853504,
+      "ppsfYoY": 0.01489624215,
+      "medianDaysOnMarket": 48,
+      "homesSold": 4824,
+      "medianSalePrice": 387500.0,
+      "periodBegin": "2026-05-01"
+    },
+    "austin-tx": {
+      "region": "Austin, TX metro area",
+      "medianPpsf": 215.757575758,
+      "ppsfYoY": -0.02313130512,
+      "medianDaysOnMarket": 58,
+      "homesSold": 2923,
+      "medianSalePrice": 447540.0,
+      "periodBegin": "2026-05-01"
+    }
+  }
+}

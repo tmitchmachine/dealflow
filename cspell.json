@@ -1,0 +1,38 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "$comment": "Project vocabulary: real-estate finance terms, vendor names, and the neighborhood names that appear in the mock listing catalog. None of these are typos.",
+  "words": [
+    "annualizing",
+    "arv",
+    "avm",
+    "bayshore",
+    "broadripple",
+    "cashflow",
+    "edgewater",
+    "financials",
+    "gunzip",
+    "hoa",
+    "irvington",
+    "mls",
+    "opex",
+    "paydown",
+    "ppsf",
+    "prerender",
+    "prerenders",
+    "redfin",
+    "rentcast",
+    "returnstate",
+    "sqft",
+    "tsv",
+    "undici",
+    "vercel",
+    "zestimate"
+  ],
+  "ignorePaths": [
+    ".next/**",
+    "node_modules/**",
+    "package-lock.json",
+    "*.tsbuildinfo"
+  ]
+}
