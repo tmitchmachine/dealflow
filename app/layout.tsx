@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dealflow — Property Opportunity Scanner",
+  title: "Dealflow — Opportunity Desk",
   description:
-    "Find businesses for sale and scan real-estate listings scored for buy-side opportunity across price, cash flow, seller motivation, and appreciation.",
+    "Find investable real-estate and business opportunities — independent valuation, DSCR/strategy gates for properties, SDE multiples and sell-readiness for businesses.",
 };
 
 export default function RootLayout({

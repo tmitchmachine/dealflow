@@ -1,14 +1,30 @@
 import Link from "next/link";
 import type { ScoredListing } from "../lib/scoring";
 import { ScoreDial } from "./ScoreDial";
+import { VerdictBadge } from "./VerdictBadge";
 import { usd, pct, signedUsd, scoreColor } from "../lib/format";
 import { listingLink } from "../lib/links";
 
+function strategyLabel(strategy: ScoredListing["deal"]["strategy"]): string | null {
+  switch (strategy) {
+    case "buy-hold":
+      return "Buy & hold";
+    case "fix-flip":
+      return "Fix & flip";
+    case "negotiate-hold":
+      return "Negotiate hold";
+    default:
+      return null;
+  }
+}
+
 export function PropertyCard({ scored }: { scored: ScoredListing }) {
-  const { listing, market, valuation, financials, deal, risks, overallScore, grade, criteria } = scored;
+  const { listing, market, valuation, financials, deal, risks, overallScore, grade, criteria, verdict, investability } =
+    scored;
   const cf = Math.round(financials.monthlyCashFlow);
   const highRisks = risks.filter((r) => r.level === "high").length;
   const source = listingLink(listing, market);
+  const strategy = strategyLabel(deal.strategy);
 
   // The whole card navigates to the detail page via a stretched overlay link,
   // which leaves the source link free to be a real <a> (anchors can't nest).
@@ -34,6 +50,12 @@ export function PropertyCard({ scored }: { scored: ScoredListing }) {
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
         <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
+          <VerdictBadge verdict={verdict} compact />
+          {strategy && (
+            <span className="rounded-full bg-sky-600/90 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+              {strategy}
+            </span>
+          )}
           {deal.discountToValue > 0.05 && (
             <span className="rounded-full bg-emerald-600/90 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
               {pct(deal.discountToValue, 0)} under value
@@ -65,7 +87,7 @@ export function PropertyCard({ scored }: { scored: ScoredListing }) {
             <div className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">{usd(listing.listPrice)}</div>
             <div className="text-sm text-zinc-500">{listing.address}</div>
             <div className="mt-0.5 text-xs text-zinc-400">
-              Our value {usd(valuation.value)} · {Math.round(valuation.confidence * 100)}% conf.
+              Our value {usd(valuation.value)} · investability {investability}
             </div>
           </div>
           <ScoreDial score={overallScore} grade={grade} size={56} />
@@ -79,7 +101,7 @@ export function PropertyCard({ scored }: { scored: ScoredListing }) {
         </div>
 
         <div className="mt-auto grid grid-cols-3 gap-2 border-t border-zinc-100 pt-3 text-center dark:border-zinc-800">
-          <Stat label="cap rate" value={pct(financials.capRate)} good={financials.capRate >= 0.06} />
+          <Stat label="DSCR" value={financials.dscr.toFixed(2)} good={financials.dscr >= 1.2} />
           <Stat label="cash flow" value={signedUsd(cf)} good={cf >= 0} />
           <Stat label="5yr/yr" value={pct(deal.projectedAnnualizedReturn)} good={deal.projectedAnnualizedReturn >= 0.1} />
         </div>

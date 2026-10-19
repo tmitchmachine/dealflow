@@ -1,23 +1,26 @@
 # Dealflow
 
-Dealflow helps people find deals worth a closer look — businesses for sale and
-real-estate opportunities — and helps owners present what they have to buyers.
+Dealflow helps people find **investable** deals — real estate worth buying and
+businesses worth buying or worth helping sell — by forming an independent
+opinion of value and only promoting deals that clear hard gates.
 
 ## What it does
 
-- **Find businesses for sale.** Browse listings of companies that are on the
-  market, with enough context to decide whether a deal is worth a closer look.
-- **Help sell a business.** Give owners a place to present their company to
-  buyers who are actively looking.
-- **Scan property listings.** Rank real-estate opportunities by buy-side score —
-  independent opinions of value, rent, and risk (from
-  [ReturnState Property](https://github.com/tmitchmachine/returnstateproperty)).
+- **Real estate.** Independent AVM from market $/sqft, then DSCR, break-even
+  occupancy, hold vs flip strategy fit, and a pursue / negotiate / watch / pass
+  verdict (not just a pretty score).
+- **Businesses (buy).** Fair value from risk-adjusted SDE multiples — transfer
+  risk, customer concentration, docs quality, and trend haircut the multiple.
+- **Businesses (help sell).** Sell-readiness score and concrete advice (reprice,
+  document SOPs, assemble financials) so owners can actually get to close.
+- **Opportunity desk.** One ranked view across both books, actionable-first.
 
-## Property opportunity scanner
+Property listing adapters started from
+[ReturnState Property](https://github.com/tmitchmachine/returnstateproperty).
 
-The first shipped surface is the property scanner (Next.js 16). It scans
-listings, forms an independent opinion of value/rent/risk, and ranks them by
-buy-side opportunity.
+## Opportunity scanner
+
+Next.js 16 app. Demo catalogs work offline; live MLS property data is opt-in.
 
 ```bash
 cp .env.example .env.local   # add RENTCAST_API_KEY + RENTCAST_LIVE=1 for live listings
@@ -64,13 +67,26 @@ MarketStats ($/sqft, YoY) ───┘
 | `app/lib/data.ts` | `getListings()` seam (RentCast live, else mock). |
 | `scripts/refresh-markets.mjs` | Rewrites the committed Redfin snapshot. |
 
-### Scoring criteria (weights)
+### Property scoring (weights)
 
-- **Below market (30%)** — list price vs. our independent value, shrunk toward
-  neutral when comp confidence is low (so a thin-comp guess can't fake a deal).
-- **Cash flow (30%)** — cap rate + monthly cash flow on a real mortgage/NOI model.
-- **Seller motivation (20%)** — days-on-market vs. local median, price cuts, distress.
-- **Appreciation (20%)** — market YoY trend, adjusted for property age.
+- **Below market (28%)** — list vs independent value; confidence-shrunk.
+- **Cash flow (32%)** — cap rate, monthly CF, **DSCR**, and rent-to-price.
+- **Seller motivation (20%)** — DOM vs median, price cuts, distress flags.
+- **Appreciation (20%)** — market YoY, age, multi-family tilt.
+
+Hard gates then produce a verdict: hold needs DSCR ≥ 1.2 and target return;
+flips need ≥ 12% margin after rehab/selling costs. Investability is
+risk-adjusted so thin-comp / high-risk deals don't rank as buys.
+
+### Business scoring (weights)
+
+- **Price vs value (30%)** — ask vs risk-adjusted SDE fair value.
+- **Cash yield (30%)** — SDE / ask and payback years.
+- **Seller motivation (20%)** — reason for sale + DOM.
+- **Business quality (20%)** — owner dependence, concentration, trend, docs.
+
+Parallel **sell-readiness** track advises whether Dealflow should help take the
+company to market (and what to fix first).
 
 ### Live data sources
 

@@ -4,6 +4,7 @@ import { getListing, getListings } from "../../lib/data";
 import { getMarkets } from "../../lib/markets";
 import { scoreListing, type RiskLevel } from "../../lib/scoring";
 import { ScoreDial } from "../../components/ScoreDial";
+import { VerdictBadge } from "../../components/VerdictBadge";
 import { usd, pct, signedUsd, scoreColor } from "../../lib/format";
 import { listingLink } from "../../lib/links";
 
@@ -22,15 +23,25 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
   const market = markets[listing.metroId];
   if (!market) notFound();
 
-  const { valuation: val, financials: fin, criteria, deal, risks, overallScore, grade } =
-    scoreListing(listing, market);
+  const {
+    valuation: val,
+    financials: fin,
+    criteria,
+    deal,
+    risks,
+    overallScore,
+    grade,
+    verdict,
+    verdictReason,
+    investability,
+  } = scoreListing(listing, market);
 
   const valVsList = (val.value - listing.listPrice) / val.value;
   const source = listingLink(listing, market);
 
   return (
     <main className="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6">
-      <Link href="/" className="text-sm text-emerald-600 hover:underline">← Back to scan</Link>
+      <Link href="/" className="text-sm text-emerald-600 hover:underline">← Back to desk</Link>
 
       {/* Hero */}
       <div className="mt-4 overflow-hidden rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
@@ -85,10 +96,24 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
             <Spec label="Sqft" value={listing.sqft.toLocaleString()} />
             <Spec label="Built" value={listing.yearBuilt} />
             <Spec label="Condition" value={listing.condition} />
-            <Spec label="Days on mkt" value={listing.daysOnMarket} />
+            <Spec label="Investability" value={investability} />
           </div>
         </div>
       </div>
+
+      <section className="mt-6 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">Verdict</h2>
+          <VerdictBadge verdict={verdict} />
+        </div>
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{verdictReason}</p>
+        <div className="mt-3 flex flex-wrap gap-3 text-xs text-zinc-500">
+          <span>Strategy: <strong className="text-zinc-700 dark:text-zinc-200">{deal.strategy.replace("-", " ")}</strong></span>
+          <span>Hold fit {deal.holdFit}</span>
+          <span>Flip fit {deal.flipFit}</span>
+          <span>DSCR {fin.dscr.toFixed(2)}</span>
+        </div>
+      </section>
 
       {/* Our value opinion */}
       <section className="mt-6 rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
@@ -121,24 +146,28 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
         <div className="grid gap-3 sm:grid-cols-2">
           <Action
             title="Buy & hold"
-            headline={`${pct(deal.projectedAnnualizedReturn)}/yr projected`}
-            good={deal.projectedAnnualizedReturn >= 0.1}
+            headline={`${pct(deal.projectedAnnualizedReturn)}/yr · fit ${deal.holdFit}`}
+            good={deal.holdFit >= 70 && fin.dscr >= 1.2}
             lines={[
               `Max offer for 10% equity: ${usd(deal.maxOffer)}`,
               listing.listPrice <= deal.maxOffer
                 ? `List price clears that bar — offer up to ${usd(deal.maxOffer)}.`
                 : `List is above the bar — negotiate toward ${usd(deal.maxOffer)}.`,
+              `DSCR ${fin.dscr.toFixed(2)} · break-even occupancy ${pct(fin.breakEvenOccupancy, 0)}.`,
               `5-yr projected profit: ${signedUsd(deal.projectedProfit)} on ${usd(fin.cashInvested)} in.`,
             ]}
           />
           <Action
             title="Fix & flip"
-            headline={`${signedUsd(deal.flipProfit)} (${pct(deal.flipMarginPct)})`}
-            good={deal.flipMarginPct >= 0.1}
+            headline={`${signedUsd(deal.flipProfit)} (${pct(deal.flipMarginPct)}) · fit ${deal.flipFit}`}
+            good={deal.flipFit >= 70 && deal.flipMarginPct >= 0.12}
             lines={[
               `Rehab to turnkey: ~${usd(val.rehab)}`,
               `After-repair value: ${usd(val.arv)}`,
               `Buy ${usd(listing.listPrice)} + rehab − 6% selling costs.`,
+              deal.flipMarginPct >= 0.12
+                ? "Clears the 12% flip-margin investability gate."
+                : "Below the 12% flip-margin gate at this ask.",
             ]}
           />
         </div>
@@ -190,8 +219,11 @@ export default async function PropertyPage({ params }: PageProps<"/property/[id]
         <h2 className="mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-50">Investment math</h2>
         <div className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900 sm:grid-cols-2">
           <Money label="Est. market rent / mo" value={usd(val.rentMonthly)} />
+          <Money label="Rent / price" value={pct(fin.rentToPrice, 2)} good={fin.rentToPrice >= 0.008} />
           <Money label="Gross yield" value={pct(fin.grossYield)} />
           <Money label="Cap rate" value={pct(fin.capRate)} good={fin.capRate >= 0.06} />
+          <Money label="DSCR" value={fin.dscr.toFixed(2)} good={fin.dscr >= 1.2} />
+          <Money label="Break-even occupancy" value={pct(fin.breakEvenOccupancy, 0)} good={fin.breakEvenOccupancy <= 0.8} />
           <Money label="Mortgage / mo" value={usd(fin.mortgagePayment)} />
           <Money label="Monthly cash flow" value={signedUsd(Math.round(fin.monthlyCashFlow))} good={fin.monthlyCashFlow >= 0} />
           <Money label="Cash-on-cash" value={pct(fin.cashOnCash)} good={fin.cashOnCash >= 0} />

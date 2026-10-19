@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test:data": "node scripts/verify-data.mjs",
+    "test:opportunities": "npx --yes tsx scripts/smoke-opportunities.mjs",
     "refresh:markets": "node scripts/refresh-markets.mjs"
   },
   "dependencies": {
