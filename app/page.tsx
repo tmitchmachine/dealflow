@@ -41,9 +41,9 @@ export default async function Home() {
           {properties.length} properties · {businesses.length} businesses · {actionable} actionable
         </h1>
         <p className="mt-1 text-zinc-500">
-          Independent valuation, then hard investability gates — DSCR and strategy fit for real
-          estate; SDE multiples, transfer risk, and sell-readiness for businesses. {pursue} marked
-          pursue.
+          Everything in one book by default, ranked best → worst on investability. Properties clear
+          DSCR / strategy gates; businesses clear SDE-multiple and transfer / sell-readiness gates.{" "}
+          {pursue} marked pursue.
         </p>
         <p className="mt-2 text-xs text-zinc-400">
           Data: {listingLabel} · market $/sqft from {marketLabel}

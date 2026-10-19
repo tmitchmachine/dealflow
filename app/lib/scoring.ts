@@ -551,14 +551,12 @@ export function scoreListing(listing: Listing, market: MarketStats): ScoredListi
   };
 }
 
-/** Score and rank a whole set of listings — actionable investable deals first. */
+/** Score and rank listings best → worst by investability. */
 export function scanListings(listings: Listing[], markets: Record<string, MarketStats>): ScoredListing[] {
   return listings
     .filter((l) => markets[l.metroId])
     .map((l) => scoreListing(l, markets[l.metroId]))
     .sort((a, b) => {
-      // Actionable first, then investability, then raw score.
-      if (a.isActionable !== b.isActionable) return a.isActionable ? -1 : 1;
       if (b.investability !== a.investability) return b.investability - a.investability;
       return b.overallScore - a.overallScore;
     });

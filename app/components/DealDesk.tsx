@@ -6,15 +6,15 @@ import type { ScoredBusiness } from "../lib/business/scoring";
 import { PropertyCard } from "./PropertyCard";
 import { BusinessCard } from "./BusinessCard";
 
-type Tab = "top" | "property" | "business";
-type SortKey = "investability" | "score" | "actionable";
+type Tab = "all" | "property" | "business";
+type SortKey = "best" | "score";
 
 type DeskItem =
   | { kind: "property"; scored: ScoredListing; investability: number; isActionable: boolean; overallScore: number }
   | { kind: "business"; scored: ScoredBusiness; investability: number; isActionable: boolean; overallScore: number };
 
 const TABS: { key: Tab; label: string }[] = [
-  { key: "top", label: "Top opportunities" },
+  { key: "all", label: "All" },
   { key: "property", label: "Real estate" },
   { key: "business", label: "Businesses" },
 ];
@@ -26,8 +26,9 @@ export function DealDesk({
   properties: ScoredListing[];
   businesses: ScoredBusiness[];
 }) {
-  const [tab, setTab] = useState<Tab>("top");
-  const [sort, setSort] = useState<SortKey>("investability");
+  // Default: All deals in one book, best → worst by investability.
+  const [tab, setTab] = useState<Tab>("all");
+  const [sort, setSort] = useState<SortKey>("best");
   const [actionableOnly, setActionableOnly] = useState(false);
   const [hideHighRisk, setHideHighRisk] = useState(false);
   const [minInvestability, setMinInvestability] = useState(0);
@@ -55,20 +56,20 @@ export function DealDesk({
       if (actionableOnly && !item.isActionable) return false;
       if (item.investability < minInvestability) return false;
       if (hideHighRisk) {
-        const risks = item.kind === "property" ? item.scored.risks : item.scored.risks;
+        const risks = item.scored.risks;
         if (risks.some((r) => r.level === "high")) return false;
       }
       return true;
     });
 
+    // Single ladder: investability is the cross-asset "how good is this deal" rank.
     pool.sort((a, b) => {
-      if (sort === "actionable") {
-        if (a.isActionable !== b.isActionable) return a.isActionable ? -1 : 1;
+      if (sort === "score") {
+        if (b.overallScore !== a.overallScore) return b.overallScore - a.overallScore;
         return b.investability - a.investability;
       }
-      if (sort === "score") return b.overallScore - a.overallScore;
-      if (a.isActionable !== b.isActionable) return a.isActionable ? -1 : 1;
-      return b.investability - a.investability;
+      if (b.investability !== a.investability) return b.investability - a.investability;
+      return b.overallScore - a.overallScore;
     });
 
     return pool;
@@ -107,8 +108,7 @@ export function DealDesk({
             onChange={(e) => setSort(e.target.value as SortKey)}
             className="rounded-md border border-zinc-300 bg-transparent px-2 py-1 dark:border-zinc-700"
           >
-            <option value="investability">Investability</option>
-            <option value="actionable">Actionable first</option>
+            <option value="best">Best → worst</option>
             <option value="score">Raw score</option>
           </select>
         </label>

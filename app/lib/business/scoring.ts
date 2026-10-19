@@ -386,7 +386,6 @@ export function scanBusinesses(listings: BusinessListing[]): ScoredBusiness[] {
   return listings
     .map(scoreBusiness)
     .sort((a, b) => {
-      if (a.isActionable !== b.isActionable) return a.isActionable ? -1 : 1;
       if (b.investability !== a.investability) return b.investability - a.investability;
       return b.overallScore - a.overallScore;
     });
