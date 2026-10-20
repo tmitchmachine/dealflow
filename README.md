@@ -41,6 +41,9 @@ Marketplace sync is index-first with a **10 detail scrapes/day** local budget
 (`data/cache/budget-daily-*.json`). Robots.txt is checked before every Firecrawl
 URL. See `src/sources/marketplaces/EVAL.md` for Phase 0a probe notes.
 
+To pause crawling: leave `data/cache/marketplace-sync.paused` in place (or set
+`MARKETPLACE_SYNC_PAUSED=1`). Delete the file to resume.
+
 ## Publish to ReturnState Team
 
 Requires a **file path** to a Firebase Admin service account JSON (same as
