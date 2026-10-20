@@ -73,3 +73,50 @@ export class MonthlyBudget {
     writeJson(this.file, this.state);
   }
 }
+
+/** Local calendar day `YYYY-MM-DD` (machine timezone), for daily API caps. */
+export function localDayKey(now = new Date()): string {
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+/**
+ * Daily spend counter for Firecrawl (and similar). Keyed by local date so a
+ * second run the same calendar day still sees remaining quota.
+ */
+export class DailyBudget {
+  private file: string;
+  private state: { day: string; used: number };
+
+  constructor(
+    name: string,
+    readonly cap: number,
+    now = new Date(),
+    /** Injectable path root for tests (defaults to CACHE_DIR). */
+    cacheDir = CACHE_DIR,
+  ) {
+    this.file = path.join(cacheDir, `budget-daily-${name}.json`);
+    const day = localDayKey(now);
+    const saved = readJson(this.file, { day, used: 0 });
+    this.state = saved.day === day ? saved : { day, used: 0 };
+  }
+
+  get used(): number {
+    return this.state.used;
+  }
+
+  get remaining(): number {
+    return Math.max(0, this.cap - this.state.used);
+  }
+
+  canSpend(n = 1): boolean {
+    return this.cap > 0 && this.state.used + n <= this.cap;
+  }
+
+  spend(n = 1): void {
+    this.state.used += n;
+    writeJson(this.file, this.state);
+  }
+}

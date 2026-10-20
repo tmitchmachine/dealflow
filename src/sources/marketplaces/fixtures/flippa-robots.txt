@@ -1,0 +1,13 @@
+Sitemap: https://flippa.com/sitemap.xml
+
+User-agent: *
+Disallow: /users/
+Disallow: /auctions/*/buy-it-now$
+Disallow: /auctions/*/offers/make-an-offer$
+Disallow: /auctions/*/bids$
+Disallow: /watch_item
+Disallow: /watch/listings/
+Disallow: /auth_redirects/*
+
+User-agent: Slurp
+Crawl-delay: 0.2

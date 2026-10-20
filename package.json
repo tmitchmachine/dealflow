@@ -3,36 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
     "list": "tsx src/core/cli.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:data": "node scripts/verify-data.mjs",
-    "test:opportunities": "npx --yes tsx scripts/smoke-opportunities.mjs",
-    "refresh:markets": "node scripts/refresh-markets.mjs",
     "sync:brokers": "tsx src/sources/brokers/cli.ts",
     "sync:taxdefault": "tsx src/sources/taxdefault/cli.ts",
+    "sync:marketplaces": "tsx --env-file=.env src/sources/marketplaces/cli.ts",
     "enrich": "tsx src/enrich/cli.ts",
-    "snapshot": "tsx src/snapshots/cli.ts"
+    "snapshot": "tsx src/snapshots/cli.ts",
+    "publish:deals": "tsx src/publish/cli.ts"
   },
   "dependencies": {
     "csv-parse": "^7.0.3",
     "csv-stringify": "^6.9.0",
-    "next": "16.2.9",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "firebase-admin": "^13.0.2"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^22",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.9",
-    "tailwindcss": "^4",
     "tsx": "^4.19.2",
     "typescript": "^5",
     "vitest": "^5.0.5"

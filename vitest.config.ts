@@ -7,10 +7,7 @@ export default defineConfig({
   },
   resolve: {
     alias: [
-      { find: /^@\/core\/(.*)$/, replacement: path.resolve(__dirname, "src/core/$1") },
-      { find: /^@\/niches\/(.*)$/, replacement: path.resolve(__dirname, "src/niches/$1") },
-      { find: "@/niches", replacement: path.resolve(__dirname, "src/niches/index.ts") },
-      { find: "@/core", replacement: path.resolve(__dirname, "src/core") },
+      { find: /^@\/(.*)$/, replacement: path.resolve(__dirname, "src/$1") },
     ],
   },
 });
